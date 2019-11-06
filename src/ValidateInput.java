@@ -1,3 +1,3 @@
 public interface ValidateInput {
-    Boolean Validate(String userInput);
+    Boolean validate(String userInput);
 }
