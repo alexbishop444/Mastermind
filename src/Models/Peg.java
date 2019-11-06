@@ -1,3 +1,5 @@
+package Models;
+
 public enum Peg {
     NONE,
     RED,

@@ -1,3 +1,5 @@
+import Models.Peg;
+
 import java.util.ArrayList;
 
 public class ConvertInputToTraditionalPegs implements ConvertInputToPegs {
