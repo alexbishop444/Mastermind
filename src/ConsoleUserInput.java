@@ -1,4 +1,4 @@
-public class DefaultUserInput implements UserInput {
+public class ConsoleUserInput implements UserInput {
     public String takeInput() {
         return "test";
     }

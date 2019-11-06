@@ -1,3 +1,5 @@
+import Models.Peg;
+
 import java.util.ArrayList;
 
 public interface ConvertInputToPegs {
