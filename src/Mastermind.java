@@ -1,3 +1,3 @@
 public interface Mastermind {
-    void Start();
+    void start();
 }

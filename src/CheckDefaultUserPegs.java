@@ -5,7 +5,9 @@ public class CheckDefaultUserPegs implements CheckUserPegs {
         return false;
     }
 
-    public ArrayList<Result> ReturnResult(ArrayList<Peg> pegs) {
+    public ArrayList<Result> returnResult(ArrayList<Peg> pegs) {
         return new ArrayList<Result>();
     }
+
+    public
 }

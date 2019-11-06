@@ -1,3 +1,3 @@
 public interface UserInput {
-    String TakeInput();
+    String takeInput();
 }

@@ -1,5 +1,5 @@
 public class DefaultUserInput implements UserInput {
-    public String TakeInput() {
+    public String takeInput() {
         return "test";
     }
 }
