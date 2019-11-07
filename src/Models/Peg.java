@@ -36,7 +36,10 @@ public enum Peg {
         System.out.println(map);
     }
 
+
     private Peg(int value) {
         this.value = value;
     }
+
+
 }
