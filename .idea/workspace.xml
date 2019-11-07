@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/ConvertInputToPegsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ConvertInputToPegsTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/InputValidationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/InputValidationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConsoleUserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConsoleUserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ConvertInputToTraditionalPegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ConvertInputToTraditionalPegs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Models/Peg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Models/Peg.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TraditionalInputValidation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraditionalInputValidation.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -22,11 +18,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/InputValidationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+            <state relative-caret-position="366">
+              <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,11 +30,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TraditionalInputValidation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state relative-caret-position="420">
+              <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#243#244#0" expanded="true" />
@@ -126,9 +122,9 @@
         <option value="$PROJECT_DIR$/src/ConsoleUserInput.java" />
         <option value="$PROJECT_DIR$/src/ConvertInputToTraditionalPegs.java" />
         <option value="$PROJECT_DIR$/Tests/ConvertInputToPegsTests.java" />
-        <option value="$PROJECT_DIR$/Tests/InputValidationTests.java" />
         <option value="$PROJECT_DIR$/src/Models/Peg.java" />
         <option value="$PROJECT_DIR$/src/TraditionalInputValidation.java" />
+        <option value="$PROJECT_DIR$/Tests/InputValidationTests.java" />
       </list>
     </option>
   </component>
@@ -198,7 +194,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.InputValidationTests.correctInputColourTestWillReturnTrue">
+  <component name="RunManager" selected="JUnit.InputValidationTests.incorrectInputColourTestWillReturnFalse">
     <configuration name="ConvertInputToPegsTests.convertInputTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
@@ -239,11 +235,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="InputValidationTests.incorrectInputLengthTestWillReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="InputValidationTests.incorrectInputTestWillReturnFalse" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="InputValidationTests" />
-      <option name="METHOD_NAME" value="incorrectInputLengthTestWillReturnFalse" />
+      <option name="METHOD_NAME" value="incorrectInputTestWillReturnFalse" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -252,17 +248,17 @@
     <list>
       <item itemvalue="JUnit.InputValidationTests.correctInputColourTestWillReturnTrue" />
       <item itemvalue="JUnit.InputValidationTests.incorrectInputColourTestWillReturnFalse" />
-      <item itemvalue="JUnit.InputValidationTests.incorrectInputLengthTestWillReturnFalse" />
       <item itemvalue="JUnit.InputValidationTests.correctInputLengthTestWillReturnTrue" />
       <item itemvalue="JUnit.ConvertInputToPegsTests.convertInputTest" />
+      <item itemvalue="JUnit.InputValidationTests.incorrectInputTestWillReturnFalse" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.InputValidationTests.correctInputColourTestWillReturnTrue" />
         <item itemvalue="JUnit.InputValidationTests.incorrectInputColourTestWillReturnFalse" />
+        <item itemvalue="JUnit.InputValidationTests.correctInputColourTestWillReturnTrue" />
         <item itemvalue="JUnit.InputValidationTests.correctInputLengthTestWillReturnTrue" />
+        <item itemvalue="JUnit.InputValidationTests.incorrectInputTestWillReturnFalse" />
         <item itemvalue="JUnit.ConvertInputToPegsTests.convertInputTest" />
-        <item itemvalue="JUnit.InputValidationTests.incorrectInputLengthTestWillReturnFalse" />
       </list>
     </recent_temporary>
   </component>
@@ -276,44 +272,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
-      <workItem from="1572994731712" duration="29457000" />
+      <workItem from="1572994731712" duration="30912000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 31m 23s.xml">
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 13m 19s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 13m 30s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 13m 41s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 13m 49s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 13m 56s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 15m 08s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 15m 31s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.08 at 10h 15m 43s.xml">
       <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 32m 39s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 16m 13s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 33m 51s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 41m 43s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 42m 51s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 43m 37s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 44m 54s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 45m 20s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 45m 59s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="InputValidationTests_correctInputColourTestWillReturnTrue - 2019.11.07 at 16h 46m 31s.xml">
-      <configuration name="InputValidationTests.correctInputColourTestWillReturnTrue" configurationId="JUnit" />
+    <history-entry file="InputValidationTests_incorrectInputColourTestWillReturnFalse - 2019.11.08 at 10h 16m 34s.xml">
+      <configuration name="InputValidationTests.incorrectInputColourTestWillReturnFalse" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29457000" />
+    <option name="totallyTimeSpent" value="30912000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -516,6 +512,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/TraditionalInputValidation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="28" column="19" selection-start-line="28" selection-start-column="19" selection-end-line="28" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#243#244#0" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ConvertInputToTraditionalPegs.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -525,22 +533,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/InputValidationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
+        <state relative-caret-position="366">
+          <caret line="27" column="64" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/TraditionalInputValidation.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" column="51" lean-forward="true" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#243#244#0" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
           </folding>
         </state>
       </provider>
