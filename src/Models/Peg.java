@@ -20,12 +20,20 @@ public enum Peg {
             map.put(peg.value, peg);
         }
     }
+
     public int getValue() {
         return value;
     }
 
     public static Peg valueOf(int peg) {
         return (Peg) map.get(peg);
+    }
+
+    public void display() {
+        for (Peg peg : Peg.values()) {
+            map.put(peg.value, peg);
+        }
+        System.out.println(map);
     }
 
     private Peg(int value) {
