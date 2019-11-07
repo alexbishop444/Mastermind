@@ -7,7 +7,7 @@ public class InputValidationTests {
 
     @Test
     public void correctInputColourTestWillReturnTrue() {
-        Boolean actual = validate.isValidColour("Blue,Green,Green,Blue,Orange");
+        Boolean actual = validate.isValidColour("Red,Green,Green,Blue,Orange");
         System.out.println(actual);
         Assert.assertTrue(actual);
     }
@@ -25,7 +25,7 @@ public class InputValidationTests {
 
     @Test
     public void incorrectInputColourTestWillReturnFalse() {
-        Boolean actual = validate.isValidColour("Black,Red,Green,Blue,Orange");
+        Boolean actual = validate.isValidColour("Red,Red,Red,Black,Blue");
         Assert.assertFalse(actual);
     }
     @Test
@@ -36,7 +36,7 @@ public class InputValidationTests {
 
     @Test
     public void incorrectInputTestWillReturnFalse() {
-        Boolean actual = validate.validate("Blue, Red, Green, Blue, Black");
+        Boolean actual = validate.validate("Blue,Red,Green,Black,Blue");
         Assert.assertFalse(actual);
     }
 

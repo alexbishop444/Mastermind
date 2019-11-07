@@ -22,12 +22,11 @@ public class TraditionalInputValidation implements ValidateInput {
 
         for (String peg:userPegs) {
             System.out.println("Peg: " + peg + " | pegMap: " + pegMap.toString());
-            if (pegMap.containsKey(peg)) {
-                System.out.println("ayyyayay");
-                return true;
+            if (!pegMap.containsKey(peg)) {
+                return false;
             }
         }
-        return false;
+        return true;
     }
 
 //    public Boolean isValidColour(String userInput) {
