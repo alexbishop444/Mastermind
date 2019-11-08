@@ -1,19 +1,18 @@
 import Models.Peg;
 
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class TraditionalInputValidation implements ValidateInput {
 
     public Boolean validate(String userInput) {
+        String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
+
+        if (isValidColour(userPegs) && isValidLength(userPegs)) {
+            return true;
+        }
         return false;
     }
-    public Boolean isValidColour(String userInput) {
-        ArrayList<String> userPegsArray = new ArrayList<>();
-        String[] userPegs = userInput.toUpperCase().split(",");
-        for (String peg: userPegs) {
-            userPegsArray.add(peg);
-        }
+    private Boolean isValidColour(String[] userPegs) {
 
         Map pegMap = new HashMap<String,Integer>();
         for (int i = 0; i < Peg.values().length; i++) {
@@ -29,20 +28,9 @@ public class TraditionalInputValidation implements ValidateInput {
         return true;
     }
 
-//    public Boolean isValidColour(String userInput) {
-//        List<String> userPegsArray = Arrays.asList(userInput.toUpperCase().split(","));
-//        ArrayList<String> pegs = new ArrayList<>();
-//
-//        for (int i = 0; i < Peg.values().length; i++) {
-//            pegs.add(Peg.valueOf(i).toString());
-//        }
-//        System.out.println(pegs);
-//        System.out.println(userPegsArray);
-//        return pegs.containsAll(userPegsArray);
-//    }
-    public Boolean isValidLength(String userInput) {
-        String[] userPegs = userInput.toUpperCase().split(",");
-        if(userPegs.length > 5) {
+
+    private Boolean isValidLength(String[] userPegs) {
+        if (userPegs.length > 5) {
             return false;
         }
         return true;
