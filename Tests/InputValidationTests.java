@@ -7,30 +7,36 @@ public class InputValidationTests {
 
     @Test
     public void correctInputColourTestWillReturnTrue() {
-        Boolean actual = validate.isValidColour("Red,Green,Green,Blue,Orange");
+        Boolean actual = validate.validate("Red,Green,Green,Blue,Orange");
         System.out.println(actual);
         Assert.assertTrue(actual);
     }
     @Test
     public void correctInputLengthTestWillReturnTrue() {
-        Boolean actual = validate.isValidLength("Blue, Red, Green, Blue, Orange");
-        Assert.assertTrue(actual);
-    }
-
-    @Test
-    public void correctInputTestWillReturnTrue() {
         Boolean actual = validate.validate("Blue, Red, Green, Blue, Orange");
         Assert.assertTrue(actual);
     }
 
     @Test
+    public void correctInputTestWillReturnTrue() {
+        Boolean actual = validate.validate("Blue,    Red,Green,Blue,Orange");
+        Assert.assertTrue(actual);
+    }
+
+    @Test
+    public void correctInputTestWithSpacesWillReturnTrue() {
+        Boolean actual = validate.validate("Blue,Red,Green,Blue,Orange");
+        Assert.assertTrue(actual);
+    }
+
+    @Test
     public void incorrectInputColourTestWillReturnFalse() {
-        Boolean actual = validate.isValidColour("Red,Red,Red,Black,Blue");
+        Boolean actual = validate.validate("Red,Red,Red,Black,Blue");
         Assert.assertFalse(actual);
     }
     @Test
     public void incorrectInputLengthTestWillReturnFalse() {
-        Boolean actual = validate.isValidLength("Blue, Red, Green, Blue, Orange, Blue");
+        Boolean actual = validate.validate("Blue, Red, Green, Blue, Orange, Blue");
         Assert.assertFalse(actual);
     }
 
