@@ -20,7 +20,8 @@ public class TraditionalMastermind implements Mastermind {
         this.validateInput = validateInput;
     }
 
-    public void start() {
+    public Result start() {
+        Result gameResult = Result.PLAYING;
         // new array = randomize()
         // loop that is reliant on turns set in constructor
         //
@@ -44,6 +45,8 @@ public class TraditionalMastermind implements Mastermind {
             amountOfTurns -= 1;
 
         } while (amountOfTurns > 0);
+
+        return gameResult;
     }
 
     private ArrayList<Peg> randomizeComputersPegs() {
