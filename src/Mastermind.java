@@ -1,3 +1,5 @@
+import Models.Result;
+
 public interface Mastermind {
-    void start();
+    Result start();
 }
