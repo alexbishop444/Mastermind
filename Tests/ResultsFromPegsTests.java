@@ -63,6 +63,19 @@ public class ResultsFromPegsTests {
         computerPegs.add(Peg.YELLOW);
         computerPegs.add(Peg.RED);
         ArrayList actual = check.returnEachCorrectlyPlacedPegsResultAsBlack(userPegs, computerPegs);
-        System.out.println(actual);
+    }
+    @Test
+    public void TETSTSTSTTSrf() {
+        ArrayList<Peg> userPegs = new ArrayList<>();
+        userPegs.add(Peg.RED);
+        userPegs.add(Peg.RED);
+        userPegs.add(Peg.GREEN);
+        userPegs.add(Peg.RED);
+        ArrayList<Peg> computerPegs = new ArrayList<>();
+        computerPegs.add(Peg.GREEN);
+        computerPegs.add(Peg.RED);
+        computerPegs.add(Peg.RED);
+        computerPegs.add(Peg.RED);
+        ArrayList actual = check.returnEachCorrectlyPlacedPegsResultAsBlack(userPegs, computerPegs);
     }
 }
