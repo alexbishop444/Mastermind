@@ -10,13 +10,22 @@ public class ConvertInputToPegsTests {
 
     @Test
     public void convertInputTest() {
-        ArrayList<Peg> userPegs = convert.convertInput("Blue,Red,Green,Blue,Orange");
-        ArrayList<Peg> computerPegs = new ArrayList<>();
-        computerPegs.add(Peg.BLUE);
-        computerPegs.add(Peg.RED);
-        computerPegs.add(Peg.GREEN);
-        computerPegs.add(Peg.BLUE);
-        computerPegs.add(Peg.ORANGE);
-        Assert.assertEquals(computerPegs,userPegs);
+        ArrayList<Peg> actualPegs = convert.convertInput("Blue,Red,Green,Blue");
+        ArrayList<Peg> expectedPegs = new ArrayList<>();
+        expectedPegs.add(Peg.BLUE);
+        expectedPegs.add(Peg.RED);
+        expectedPegs.add(Peg.GREEN);
+        expectedPegs.add(Peg.BLUE);
+        Assert.assertEquals(expectedPegs,actualPegs);
+    }
+    @Test
+    public void convertInputWithSpacesTest() {
+        ArrayList<Peg> actualPegs = convert.convertInput("Blue,     Red,Green,     Blue");
+        ArrayList<Peg> expectedPegs = new ArrayList<>();
+        expectedPegs.add(Peg.BLUE);
+        expectedPegs.add(Peg.RED);
+        expectedPegs.add(Peg.GREEN);
+        expectedPegs.add(Peg.BLUE);
+        Assert.assertEquals(expectedPegs,actualPegs);
     }
 }

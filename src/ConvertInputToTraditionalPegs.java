@@ -5,31 +5,31 @@ import java.util.ArrayList;
 public class ConvertInputToTraditionalPegs implements ConvertInputToPegs {
 
     public ArrayList<Peg> convertInput(String userInput) {
-        ArrayList<Peg> userPegs = new ArrayList<>();
-        String[] userPegs1 = userInput.split(",");
-        System.out.println(userPegs1);
-        for (String peg:userPegs1) {
+        ArrayList<Peg> convertedInputToPegs = new ArrayList<>();
+        String[] userPegsInput = userInput.replace(" ","").split(",");
+        System.out.println(userPegsInput);
+        for (String peg:userPegsInput) {
             switch (peg) {
                 case "Red":
-                    userPegs.add(Peg.RED);
+                    convertedInputToPegs.add(Peg.RED);
                     break;
                 case "Blue":
-                    userPegs.add(Peg.BLUE);
+                    convertedInputToPegs.add(Peg.BLUE);
                     break;
                 case "Green":
-                    userPegs.add(Peg.GREEN);
+                    convertedInputToPegs.add(Peg.GREEN);
                     break;
                 case "Orange":
-                    userPegs.add(Peg.ORANGE);
+                    convertedInputToPegs.add(Peg.ORANGE);
                     break;
                 case "Purple":
-                    userPegs.add(Peg.PURPLE);
+                    convertedInputToPegs.add(Peg.PURPLE);
                     break;
                 case "Yellow":
-                    userPegs.add(Peg.YELLOW);
+                    convertedInputToPegs.add(Peg.YELLOW);
                     break;
             }
         }
-        return userPegs;
+        return convertedInputToPegs;
     }
 }
