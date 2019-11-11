@@ -49,4 +49,20 @@ public class ResultsFromPegsTests {
         Result actual = check.getGameResult(userPegs, computerPegs);
         Assert.assertEquals(Result.WIN,actual);
     }
+
+    @Test
+    public void TETSTSTSTTST() {
+        ArrayList<Peg> userPegs = new ArrayList<>();
+        userPegs.add(Peg.RED);
+        userPegs.add(Peg.ORANGE);
+        userPegs.add(Peg.BLUE);
+        userPegs.add(Peg.RED);
+        ArrayList<Peg> computerPegs = new ArrayList<>();
+        computerPegs.add(Peg.BLUE);
+        computerPegs.add(Peg.ORANGE);
+        computerPegs.add(Peg.YELLOW);
+        computerPegs.add(Peg.RED);
+        ArrayList actual = check.returnEachCorrectlyPlacedPegsResultAsBlack(userPegs, computerPegs);
+        System.out.println(actual);
+    }
 }

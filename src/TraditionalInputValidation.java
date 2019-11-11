@@ -34,8 +34,8 @@ public class TraditionalInputValidation implements ValidateInput {
 
 
     private Boolean isValidLength(String[] userPegs) {
-        if (userPegs.length > 5) {
-            System.out.println("Error: you must pass 4 colours!");
+        if (userPegs.length != 4) {
+            System.out.println("Error: you must pass 5 colours!");
             return false;
         }
         return true;
