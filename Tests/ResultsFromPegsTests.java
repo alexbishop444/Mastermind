@@ -62,7 +62,7 @@ public class ResultsFromPegsTests {
         computerPegs.add(Peg.ORANGE);
         computerPegs.add(Peg.YELLOW);
         computerPegs.add(Peg.RED);
-        ArrayList actual = check.returnEachCorrectlyPlacedPegsResultAsBlack(userPegs, computerPegs);
+        ArrayList actual = check.returnPlacedPegValues(userPegs, computerPegs);
     }
     @Test
     public void TETSTSTSTTSrf() {
@@ -76,6 +76,6 @@ public class ResultsFromPegsTests {
         computerPegs.add(Peg.RED);
         computerPegs.add(Peg.RED);
         computerPegs.add(Peg.RED);
-        ArrayList actual = check.returnEachCorrectlyPlacedPegsResultAsBlack(userPegs, computerPegs);
+        ArrayList actual = check.returnPlacedPegValues(userPegs, computerPegs);
     }
 }
