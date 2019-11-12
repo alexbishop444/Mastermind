@@ -8,6 +8,7 @@ import java.util.Scanner;
 
 public class UserInputService {
     private Scanner scanner = new Scanner(System.in);
+    Map pegMap = new HashMap<String,Integer>();
 
     public String takeInput() {
         ArrayList<String> pegs = new ArrayList<>();
@@ -23,7 +24,6 @@ public class UserInputService {
 
     public Boolean isValidColour(String userInput) {
         String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
-        Map pegMap = new HashMap<String,Integer>();
         for (int i = 0; i < Peg.values().length; i++) {
             pegMap.put(Peg.valueOf(i).toString(), i);
         }
@@ -53,26 +53,12 @@ public class UserInputService {
         ArrayList<Peg> convertedInputToPegs = new ArrayList<>();
         String[] userPegsInput = userInput.replace(" ","").split(",");
         System.out.println(userPegsInput);
+        for (int i = 0; i < Peg.values().length; i++) {
+            pegMap.put(Peg.valueOf(i).toString(), i);
+        }
         for (String peg:userPegsInput) {
-            switch (peg) {
-                case "Red":
-                    convertedInputToPegs.add(Peg.RED);
-                    break;
-                case "Blue":
-                    convertedInputToPegs.add(Peg.BLUE);
-                    break;
-                case "Green":
-                    convertedInputToPegs.add(Peg.GREEN);
-                    break;
-                case "Orange":
-                    convertedInputToPegs.add(Peg.ORANGE);
-                    break;
-                case "Purple":
-                    convertedInputToPegs.add(Peg.PURPLE);
-                    break;
-                case "Yellow":
-                    convertedInputToPegs.add(Peg.YELLOW);
-                    break;
+            if (!pegMap.containsKey(peg)) {
+                convertedInputToPegs.add(Peg.valueOf(peg.toUpperCase()));
             }
         }
         return convertedInputToPegs;
