@@ -1,6 +1,5 @@
 import Models.Peg;
 import Models.Result;
-import Models.UserPlacedPegValues;
 
 import java.util.ArrayList;
 
@@ -10,14 +9,14 @@ public class TraditionalMastermind implements Mastermind {
     ConvertInputToPegs convertInputToPegs;
     ResultsFromPegs resultsFromPegs;
     UserInput userInput;
-    ValidateInput validateInput;
+    InputValidator inputValidator;
 
-    public TraditionalMastermind(int amountOfTurns, ConvertInputToPegs convertInputToPegs, ResultsFromPegs resultsFromPegs, UserInput userInput, ValidateInput validateInput) {
+    public TraditionalMastermind(int amountOfTurns, ConvertInputToPegs convertInputToPegs, ResultsFromPegs resultsFromPegs, UserInput userInput, InputValidator inputValidator) {
         this.amountOfTurns = amountOfTurns;
         this.convertInputToPegs = convertInputToPegs;
         this.resultsFromPegs = resultsFromPegs;
         this.userInput = userInput;
-        this.validateInput = validateInput;
+        this.inputValidator = inputValidator;
     }
 
     public Result start() {
@@ -30,7 +29,7 @@ public class TraditionalMastermind implements Mastermind {
         System.out.println(computerPegs.toString());
         do {
             String consoleInput = userInput.takeInput();
-            if (validateInput.validate(consoleInput)) {
+            if (inputValidator.validate(consoleInput)) {
                 userPegs = convertInputToPegs.convertInput(consoleInput);
             }
 
