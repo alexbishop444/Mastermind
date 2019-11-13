@@ -26,6 +26,7 @@ public class ResultsFromPegsTests {
         expected.add(new KeyPeg(KeyPegColour.BLACK));
         expected.add(new KeyPeg(KeyPegColour.BLACK));
         String expectedString = expected.toString();
+        check.shuffleResult(expected);
         Assert.assertEquals(expectedString,actual);
     }
 //

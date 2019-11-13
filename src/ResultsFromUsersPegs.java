@@ -1,8 +1,10 @@
 import Models.*;
 
+import javax.swing.plaf.basic.BasicSplitPaneUI;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 
 public class ResultsFromUsersPegs implements ResultsFromPegs {
     public Result getGameResult(ArrayList<CodePegColour> codePegColours, ArrayList<CodePegColour> computersCodePegColours) {
@@ -40,17 +42,19 @@ public class ResultsFromUsersPegs implements ResultsFromPegs {
 
         System.out.println("users is " + remainingUserCodePegs);
         System.out.println("computers is " + remainingComputerCodePegs);
-        System.out.println(blackKeyPegs);
-        System.out.println(whiteKeyPegs);
+//        System.out.println(blackKeyPegs);
+//        System.out.println(whiteKeyPegs);
 
         keyPegs.addAll(0,blackKeyPegs);
         keyPegs.addAll(0,whiteKeyPegs);
-
+        System.out.println(keyPegs);
         return keyPegs;
     }
 
-    public ArrayList<KeyPegColour> shuffleResult(ArrayList<KeyPegColour> resultsWhite, ArrayList<KeyPegColour> resultsBlack) {
+    public ArrayList<KeyPeg> shuffleResult(ArrayList<KeyPeg> keyPegs) {
 
-        return new ArrayList<KeyPegColour>();
+        Collections.shuffle(keyPegs);
+        System.out.println(keyPegs);
+        return keyPegs;
     }
 }
