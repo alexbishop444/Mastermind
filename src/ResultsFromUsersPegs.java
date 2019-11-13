@@ -12,16 +12,17 @@ public class ResultsFromUsersPegs implements ResultsFromPegs {
         return Result.PLAYING;
     }
 
-    public ArrayList<KeyPeg> returnPlacedPegValues(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    public ArrayList<KeyPeg> getKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
 
-        ArrayList<KeyPeg> blackValues = new ArrayList<>();
-        ArrayList<KeyPeg> whiteValues = new ArrayList<>();
+        ArrayList<KeyPeg> blackKeyPegs = new ArrayList<>();
+        ArrayList<KeyPeg> whiteKeyPegs = new ArrayList<>();
+        ArrayList<KeyPeg> keyPegs = new ArrayList<>();
         ArrayList<CodePeg> remainingUserCodePegs = new ArrayList<>();
         ArrayList<CodePeg> remainingComputerCodePegs = new ArrayList<>();
 
         for (int i = 0; i < usersCodePegs.size(); i++) {
             if (usersCodePegs.get(i).getCodePegColour() == computersCodePegs.get(i).getCodePegColour()) {
-                blackValues.add(new KeyPeg(KeyPegColour.BLACK));
+                blackKeyPegs.add(new KeyPeg(KeyPegColour.BLACK));
             } else {
                 remainingUserCodePegs.add(usersCodePegs.get(i));
                 remainingComputerCodePegs.add(computersCodePegs.get(i));
@@ -29,9 +30,9 @@ public class ResultsFromUsersPegs implements ResultsFromPegs {
         }
 
         for (CodePeg userCodePeg : remainingUserCodePegs) {
-            for (CodePeg remainingCodePegColour : remainingComputerCodePegs) {
-                if (userCodePeg.getCodePegColour().equals(remainingCodePegColour.getCodePegColour())) {
-                    whiteValues.add(new KeyPeg(KeyPegColour.WHITE));
+            for (CodePeg remainingComputerCodePeg : remainingComputerCodePegs) {
+                if (userCodePeg.getCodePegColour().equals(remainingComputerCodePeg.getCodePegColour())) {
+                    whiteKeyPegs.add(new KeyPeg(KeyPegColour.WHITE));
                     break;
                 }
             }
@@ -39,10 +40,13 @@ public class ResultsFromUsersPegs implements ResultsFromPegs {
 
         System.out.println("users is " + remainingUserCodePegs);
         System.out.println("computers is " + remainingComputerCodePegs);
-        System.out.println(blackValues);
-        System.out.println(whiteValues);
+        System.out.println(blackKeyPegs);
+        System.out.println(whiteKeyPegs);
 
-        return blackValues;
+        keyPegs.addAll(0,blackKeyPegs);
+        keyPegs.addAll(0,whiteKeyPegs);
+
+        return keyPegs;
     }
 
     public ArrayList<KeyPegColour> shuffleResult(ArrayList<KeyPegColour> resultsWhite, ArrayList<KeyPegColour> resultsBlack) {
