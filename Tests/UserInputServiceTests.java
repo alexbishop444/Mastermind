@@ -1,4 +1,4 @@
-import Models.Peg;
+import Models.CodePegColour;
 import org.junit.Assert;
 import org.junit.Test;
 
@@ -45,23 +45,23 @@ public class UserInputServiceTests {
 
     @Test
     public void convertInputTest() {
-        ArrayList<Peg> actualPegs = userInputService.convertInput("Blue,Red,Green,Blue");
-        ArrayList<Peg> expectedPegs = new ArrayList<>();
-        expectedPegs.add(Peg.BLUE);
-        expectedPegs.add(Peg.RED);
-        expectedPegs.add(Peg.GREEN);
-        expectedPegs.add(Peg.BLUE);
-        Assert.assertEquals(expectedPegs,actualPegs);
+        ArrayList<CodePegColour> actualCodePegColours = userInputService.convertInput("Blue,Red,Green,Blue");
+        ArrayList<CodePegColour> expectedCodePegColours = new ArrayList<>();
+        expectedCodePegColours.add(CodePegColour.BLUE);
+        expectedCodePegColours.add(CodePegColour.RED);
+        expectedCodePegColours.add(CodePegColour.GREEN);
+        expectedCodePegColours.add(CodePegColour.BLUE);
+        Assert.assertEquals(expectedCodePegColours, actualCodePegColours);
     }
     @Test
     public void convertInputWithSpacesTest() {
-        ArrayList<Peg> actualPegs = userInputService.convertInput("Blue,     Red,Green,     Blue");
-        ArrayList<Peg> expectedPegs = new ArrayList<>();
-        expectedPegs.add(Peg.BLUE);
-        expectedPegs.add(Peg.RED);
-        expectedPegs.add(Peg.GREEN);
-        expectedPegs.add(Peg.BLUE);
-        Assert.assertEquals(expectedPegs,actualPegs);
+        ArrayList<CodePegColour> actualCodePegColours = userInputService.convertInput("Blue,     Red,Green,     Blue");
+        ArrayList<CodePegColour> expectedCodePegColours = new ArrayList<>();
+        expectedCodePegColours.add(CodePegColour.BLUE);
+        expectedCodePegColours.add(CodePegColour.RED);
+        expectedCodePegColours.add(CodePegColour.GREEN);
+        expectedCodePegColours.add(CodePegColour.BLUE);
+        Assert.assertEquals(expectedCodePegColours, actualCodePegColours);
     }
 
 }

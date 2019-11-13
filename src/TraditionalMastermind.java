@@ -1,4 +1,4 @@
-//import Models.Peg;
+//import Models.CodePegColour;
 //import Models.Result;
 //
 //import java.util.ArrayList;
@@ -24,8 +24,8 @@
 //        // new array = randomize()
 //        // loop that is reliant on turns set in constructor
 //        //
-//        ArrayList<Peg> userPegs = new ArrayList<>();
-//        ArrayList<Peg> computerPegs = randomizeComputersPegs();
+//        ArrayList<CodePegColour> userPegs = new ArrayList<>();
+//        ArrayList<CodePegColour> computerPegs = randomizeComputersPegs();
 //        System.out.println(computerPegs.toString());
 //        do {
 //            String consoleInput = userInput.takeInput();
@@ -39,7 +39,7 @@
 //                System.out.println("WINNER");
 //            }
 //
-////            ArrayList<UserPlacedPegValues> values = resultsFromPegs.returnPlacedPegValues();
+////            ArrayList<KeyPegColour> values = resultsFromPegs.returnPlacedPegValues();
 ////            System.out.println(values);
 //            amountOfTurns -= 1;
 //
@@ -48,15 +48,15 @@
 //        return gameResult;
 //    }
 //
-//    private ArrayList<Peg> randomizeComputersPegs() {
+//    private ArrayList<CodePegColour> randomizeComputersPegs() {
 //        int max = 5;
 //        int min = 0;
 //        int range = max - min + 1;
-//        ArrayList<Peg> computerPegs = new ArrayList<>();
+//        ArrayList<CodePegColour> computerPegs = new ArrayList<>();
 //
 //        for (int i = 0; i < 5; i++) {
 //            int rand = (int) (Math.random() * range) + min;
-//            computerPegs.add(Peg.valueOf(rand));
+//            computerPegs.add(CodePegColour.valueOf(rand));
 //        }
 //        return computerPegs;
 //

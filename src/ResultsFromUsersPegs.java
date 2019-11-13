@@ -1,52 +1,52 @@
-import Models.Peg;
-import Models.UserPlacedPegValues;
+import Models.CodePegColour;
+import Models.KeyPegColour;
 import Models.Result;
 
 import java.util.ArrayList;
 
 public class ResultsFromUsersPegs implements ResultsFromPegs {
-    public Result getGameResult(ArrayList<Peg> pegs, ArrayList<Peg> computersPegs) {
-        if(pegs.equals(computersPegs)) {
+    public Result getGameResult(ArrayList<CodePegColour> codePegColours, ArrayList<CodePegColour> computersCodePegColours) {
+        if(codePegColours.equals(computersCodePegColours)) {
             return Result.WIN;
         }
         return Result.PLAYING;
     }
 
-    public ArrayList<UserPlacedPegValues> returnPlacedPegValues(ArrayList<Peg> usersPegs, ArrayList<Peg> computersPegs) {
+    public ArrayList<KeyPegColour> returnPlacedPegValues(ArrayList<CodePegColour> usersCodePegColours, ArrayList<CodePegColour> computersCodePegColours) {
 
-        ArrayList<UserPlacedPegValues> blackValues = new ArrayList<>();
-        ArrayList<UserPlacedPegValues> whiteValues = new ArrayList<>();
-        ArrayList<Peg> remainingUserPegs = new ArrayList<>();
-        ArrayList<Peg> remainingComputerPegs = new ArrayList<>();
+        ArrayList<KeyPegColour> blackValues = new ArrayList<>();
+        ArrayList<KeyPegColour> whiteValues = new ArrayList<>();
+        ArrayList<CodePegColour> remainingUserCodePegColours = new ArrayList<>();
+        ArrayList<CodePegColour> remainingComputerCodePegColours = new ArrayList<>();
 
-        for (int i = 0; i < usersPegs.size(); i++) {
-            if (usersPegs.get(i) == computersPegs.get(i)) {
-                blackValues.add(UserPlacedPegValues.BLACK);
+        for (int i = 0; i < usersCodePegColours.size(); i++) {
+            if (usersCodePegColours.get(i) == computersCodePegColours.get(i)) {
+                blackValues.add(KeyPegColour.BLACK);
             } else {
-                remainingUserPegs.add(usersPegs.get(i));
-                remainingComputerPegs.add(computersPegs.get(i));
+                remainingUserCodePegColours.add(usersCodePegColours.get(i));
+                remainingComputerCodePegColours.add(computersCodePegColours.get(i));
             }
         }
 
-        for (Peg userPeg : remainingUserPegs) {
-            for (Peg remainingPeg : remainingComputerPegs) {
-                if (userPeg.equals(remainingPeg)) {
-                    whiteValues.add(UserPlacedPegValues.WHITE);
+        for (CodePegColour userCodePegColour : remainingUserCodePegColours) {
+            for (CodePegColour remainingCodePegColour : remainingComputerCodePegColours) {
+                if (userCodePegColour.equals(remainingCodePegColour)) {
+                    whiteValues.add(KeyPegColour.WHITE);
                     break;
                 }
             }
         }
 
-        System.out.println("users is " + remainingUserPegs);
-        System.out.println("computers is " + remainingComputerPegs);
+        System.out.println("users is " + remainingUserCodePegColours);
+        System.out.println("computers is " + remainingComputerCodePegColours);
         System.out.println(blackValues);
         System.out.println(whiteValues);
 
         return blackValues;
     }
 
-    public ArrayList<UserPlacedPegValues> shuffleResult(ArrayList<UserPlacedPegValues> resultsWhite, ArrayList<UserPlacedPegValues> resultsBlack) {
+    public ArrayList<KeyPegColour> shuffleResult(ArrayList<KeyPegColour> resultsWhite, ArrayList<KeyPegColour> resultsBlack) {
 
-        return new ArrayList<UserPlacedPegValues>();
+        return new ArrayList<KeyPegColour>();
     }
 }
