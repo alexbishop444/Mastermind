@@ -3,7 +3,7 @@ package Models;
 import java.util.HashMap;
 import java.util.Map;
 
-public enum Peg {
+public enum CodePegColour {
     RED(0),
     BLUE(1),
     GREEN(2),
@@ -16,18 +16,18 @@ public enum Peg {
     private static Map map = new HashMap<>();
 
     static {
-        for (Peg peg : Peg.values()) {
-            map.put(peg.value, peg);
+        for (CodePegColour codePegColour : CodePegColour.values()) {
+            map.put(codePegColour.value, codePegColour);
         }
     }
 
-    public static Peg valueOf(int peg) {
-        return (Peg) map.get(peg);
+    public static CodePegColour valueOf(int peg) {
+        return (CodePegColour) map.get(peg);
     }
 
 
 
-    Peg(int value) {
+    CodePegColour(int value) {
         this.value = value;
     }
 

@@ -1,6 +1,6 @@
 package Models;
 
-public enum UserPlacedPegValues {
+public enum KeyPegColour {
     NONE,
     BLACK,
     WHITE
