@@ -1,3 +1,4 @@
+import Models.CodePeg;
 import Models.CodePegColour;
 import org.junit.Assert;
 import org.junit.Test;
@@ -45,23 +46,24 @@ public class UserInputServiceTests {
 
     @Test
     public void convertInputTest() {
-        ArrayList<CodePegColour> actualCodePegColours = userInputService.convertInput("Blue,Red,Green,Blue");
-        ArrayList<CodePegColour> expectedCodePegColours = new ArrayList<>();
-        expectedCodePegColours.add(CodePegColour.BLUE);
-        expectedCodePegColours.add(CodePegColour.RED);
-        expectedCodePegColours.add(CodePegColour.GREEN);
-        expectedCodePegColours.add(CodePegColour.BLUE);
+        ArrayList<CodePeg> actualCodePegColours = userInputService.convertInput("Blue,Red,Green,Blue");
+        ArrayList<CodePeg> expectedCodePegColours = new ArrayList<>();
+        expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.RED));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.GREEN));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
         Assert.assertEquals(expectedCodePegColours, actualCodePegColours);
     }
     @Test
     public void convertInputWithSpacesTest() {
-        ArrayList<CodePegColour> actualCodePegColours = userInputService.convertInput("Blue,     Red,Green,     Blue");
-        ArrayList<CodePegColour> expectedCodePegColours = new ArrayList<>();
-        expectedCodePegColours.add(CodePegColour.BLUE);
-        expectedCodePegColours.add(CodePegColour.RED);
-        expectedCodePegColours.add(CodePegColour.GREEN);
-        expectedCodePegColours.add(CodePegColour.BLUE);
-        Assert.assertEquals(expectedCodePegColours, actualCodePegColours);
+        String actualCodePegColours = userInputService.convertInput("Blue,     Red,Green,     Blue").toString();
+        ArrayList<CodePeg> expectedCodePegColours = new ArrayList<>();
+        expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.RED));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.GREEN));
+        expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        String expected = expectedCodePegColours.toString();
+        Assert.assertEquals(expected, actualCodePegColours);
     }
 
 }
