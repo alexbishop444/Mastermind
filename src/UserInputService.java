@@ -1,3 +1,4 @@
+import Models.CodePeg;
 import Models.CodePegColour;
 
 import java.util.ArrayList;
@@ -8,7 +9,7 @@ import java.util.Scanner;
 
 public class UserInputService {
     private Scanner scanner = new Scanner(System.in);
-    Map pegMap = new HashMap<String,Integer>();
+    Map codePegMap = new HashMap<String,Integer>();
 
     public String takeInput() {
         ArrayList<String> pegs = new ArrayList<>();
@@ -25,12 +26,12 @@ public class UserInputService {
     public Boolean isValidColour(String userInput) {
         String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
         for (int i = 0; i < CodePegColour.values().length; i++) {
-            pegMap.put(CodePegColour.valueOf(i).toString(), i);
+            codePegMap.put(CodePegColour.valueOf(i).toString(), i);
         }
 
         for (String userChosenPeg:userPegs) {
-//            System.out.println("CodePegColour: " + userChosenPeg + " | pegMap: " + pegMap.toString());  //FOR DEBUGGING
-            if (!pegMap.containsKey(userChosenPeg)) {
+//            System.out.println("CodePegColour: " + userChosenPeg + " | codePegMap: " + codePegMap.toString());  //FOR DEBUGGING
+            if (!codePegMap.containsKey(userChosenPeg)) {
                 System.out.println("Error: you have given an invalid colour!");
                 return false;
             }
@@ -49,19 +50,19 @@ public class UserInputService {
         return true;
     }
 
-    public ArrayList<CodePegColour> convertInput(String userInput) {
-        ArrayList<CodePegColour> convertedInputToCodePegColours = new ArrayList<>();
+    public ArrayList<CodePeg> convertInput(String userInput) {
+        ArrayList<CodePeg> convertedInputToCodePegs = new ArrayList<>();
         String[] userPegsInput = userInput.replace(" ","").split(",");
         System.out.println(userPegsInput);
         for (int i = 0; i < CodePegColour.values().length; i++) {
-            pegMap.put(CodePegColour.valueOf(i).toString(), i);
+            codePegMap.put(CodePegColour.valueOf(i).toString(), i);
         }
         for (String peg:userPegsInput) {
-            if (!pegMap.containsKey(peg)) {
-                convertedInputToCodePegColours.add(CodePegColour.valueOf(peg.toUpperCase()));
+            if (!codePegMap.containsKey(peg)) {
+                convertedInputToCodePegs.add(new CodePeg(CodePegColour.valueOf(peg.toUpperCase())));
             }
         }
-        return convertedInputToCodePegColours;
+        return convertedInputToCodePegs;
     }
 
 
