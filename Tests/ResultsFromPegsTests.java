@@ -20,12 +20,13 @@ public class ResultsFromPegsTests {
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
-        ArrayList<KeyPeg> actual = check.returnPlacedPegValues(userCodePegColours, computerCodePegColours);
+        String actual = check.getKeyPegs(userCodePegColours, computerCodePegColours).toString();
         ArrayList<KeyPeg> expected = new ArrayList<>();
+        expected.add(new KeyPeg(KeyPegColour.WHITE));
         expected.add(new KeyPeg(KeyPegColour.BLACK));
-        expected.add(new KeyPeg(KeyPegColour.WHITE));
-        expected.add(new KeyPeg(KeyPegColour.WHITE));
-        Assert.assertEquals(expected,actual);
+        expected.add(new KeyPeg(KeyPegColour.BLACK));
+        String expectedString = expected.toString();
+        Assert.assertEquals(expectedString,actual);
     }
 //
 //    @Test
@@ -58,7 +59,7 @@ public class ResultsFromPegsTests {
 //        computerCodePegColours.add(CodePegColour.ORANGE);
 //        computerCodePegColours.add(CodePegColour.YELLOW);
 //        computerCodePegColours.add(CodePegColour.RED);
-//        ArrayList actual = check.returnPlacedPegValues(userCodePegColours, computerCodePegColours);
+//        ArrayList actual = check.getKeyPegs(userCodePegColours, computerCodePegColours);
 //    }
 //    @Test
 //    public void TETSTSTSTTSrf() {
@@ -72,6 +73,6 @@ public class ResultsFromPegsTests {
 //        computerCodePegColours.add(CodePegColour.RED);
 //        computerCodePegColours.add(CodePegColour.RED);
 //        computerCodePegColours.add(CodePegColour.RED);
-//        ArrayList actual = check.returnPlacedPegValues(userCodePegColours, computerCodePegColours);
+//        ArrayList actual = check.getKeyPegs(userCodePegColours, computerCodePegColours);
 //    }
 }
