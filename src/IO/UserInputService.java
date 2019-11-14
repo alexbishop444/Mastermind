@@ -7,20 +7,20 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
-@SuppressWarnings("Duplicates")
 
 public class UserInputService implements UserInput {
     private Scanner scanner = new Scanner(System.in);
     private Map codePegMap = new HashMap<String,Integer>();
+    private ArrayList<String> codePegColours = new ArrayList<>();
+
 
     public String takeInput() {
-        ArrayList<String> pegs = new ArrayList<>();
 
         for (int i = 0; i < CodePegColour.values().length; i++) {
-            pegs.add(CodePegColour.valueOf(i).toString());
+            codePegColours.add(CodePegColour.valueOf(i).toString());
         }
 
-        System.out.println("Choose Four Pegs from " + pegs.toString().replace("[","").replace("]",""));
+        System.out.println("Choose Four Pegs from " + codePegColours.toString().replace("[","").replace("]",""));
 
         return scanner.nextLine();
     }

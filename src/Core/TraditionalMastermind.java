@@ -8,9 +8,9 @@ import java.util.ArrayList;
 
 public class TraditionalMastermind implements Mastermind {
 
-    int amountOfTurns;
-    KeyPegsGeneration keyPegsGenerator;
-    UserInput userInput;
+    private int amountOfTurns;
+    private KeyPegsGeneration keyPegsGenerator;
+    private UserInput userInput;
 
     public TraditionalMastermind(int amountOfTurns, KeyPegsGeneration keyPegsGenerator, UserInput userInput) {
         this.amountOfTurns = amountOfTurns;
