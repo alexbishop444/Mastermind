@@ -11,6 +11,9 @@ public class TraditionalMastermind implements Mastermind {
     private int amountOfTurns;
     private KeyPegsGeneration keyPegsGenerator;
     private UserInput userInput;
+    private ArrayList<CodePeg> computerPegs = new ArrayList<>();
+    private ArrayList<CodePeg> userPegs = new ArrayList<>();
+
 
     public TraditionalMastermind(int amountOfTurns, KeyPegsGeneration keyPegsGenerator, UserInput userInput) {
         this.amountOfTurns = amountOfTurns;
@@ -19,10 +22,9 @@ public class TraditionalMastermind implements Mastermind {
     }
 
     public Result start() {
+        randomizeComputersPegs();
         Result gameResult = Result.PLAYING;
-        ArrayList<CodePeg> userPegs = new ArrayList<>();
-        ArrayList<CodePeg> computerPegs = randomizeComputersPegs();
-        System.out.println(computerPegs.toString());
+//        System.out.println(computerPegs.toString());
         do {
             String consoleInput = userInput.takeInput();
             if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
@@ -43,23 +45,22 @@ public class TraditionalMastermind implements Mastermind {
         } while (amountOfTurns > 0);
 
         if(amountOfTurns == 0) {
+            System.out.println("You have ran out of turns! The correct combination is " + computerPegs.toString());
             gameResult = Result.LOSS;
         }
 
         return gameResult;
     }
 
-    private ArrayList<CodePeg> randomizeComputersPegs() {
+    private void randomizeComputersPegs() {
         int max = 4;
         int min = 0;
         int range = max - min + 1;
-        ArrayList<CodePeg> computerPegs = new ArrayList<>();
 
         for (int i = 0; i < max; i++) {
             int rand = (int) (Math.random() * range) + min;
             computerPegs.add(new CodePeg(CodePegColour.valueOf(rand)));
         }
-        return computerPegs;
 
     }
 
