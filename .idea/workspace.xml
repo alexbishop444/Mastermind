@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultsFromPegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsFromPegs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TraditionalMastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraditionalMastermind.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -55,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="372">
-              <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+            <state relative-caret-position="435">
+              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
             </state>
           </provider>
         </entry>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="930">
-              <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+            <state relative-caret-position="258">
+              <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -119,8 +116,8 @@
         <option value="$PROJECT_DIR$/src/ResultsFromPegs.java" />
         <option value="$PROJECT_DIR$/src/Models/KeyPeg.java" />
         <option value="$PROJECT_DIR$/src/UserInput.java" />
-        <option value="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" />
         <option value="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" />
+        <option value="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" />
       </list>
     </option>
   </component>
@@ -184,7 +181,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResultsFromPegsTests">
+  <component name="RunManager" selected="JUnit.ResultsFromPegsTests.returnTrueAspepf">
     <configuration name="ResultsFromPegsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
@@ -214,11 +211,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserInputServiceTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsFromPegsTests.returnTrueAspepf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserInputServiceTests" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="METHOD_NAME" value="returnTrueAspepf" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -235,18 +233,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ResultsFromPegsTests" />
-      <item itemvalue="JUnit.UserInputServiceTests" />
       <item itemvalue="JUnit.UserInputServiceTests.convertInputWithSpacesTest" />
       <item itemvalue="JUnit.ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" />
       <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" />
+      <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAspepf" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAspepf" />
         <item itemvalue="JUnit.ResultsFromPegsTests" />
         <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" />
         <item itemvalue="JUnit.ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" />
         <item itemvalue="JUnit.UserInputServiceTests.convertInputWithSpacesTest" />
-        <item itemvalue="JUnit.UserInputServiceTests" />
       </list>
     </recent_temporary>
   </component>
@@ -261,29 +259,11 @@
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
       <workItem from="1572994731712" duration="46184000" />
-      <workItem from="1573601149757" duration="8649000" />
+      <workItem from="1573601149757" duration="9236000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 43m 16s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 46m 40s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 47m 58s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 50m 42s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 51m 21s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 51m 35s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 53m 25s.xml">
       <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
     </history-entry>
@@ -296,9 +276,27 @@
     <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 02m 15s.xml">
       <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 07m 25s.xml">
+      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 11m 02s.xml">
+      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 13m 08s.xml">
+      <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 13m 58s.xml">
+      <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 14m 16s.xml">
+      <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 15m 13s.xml">
+      <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54833000" />
+    <option name="totallyTimeSpent" value="55420000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -508,15 +506,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="372">
-          <caret line="34" column="40" lean-forward="true" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        <state relative-caret-position="435">
+          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="930">
-          <caret line="62" column="40" lean-forward="true" selection-start-line="62" selection-start-column="40" selection-end-line="62" selection-end-column="40" />
+        <state relative-caret-position="258">
+          <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

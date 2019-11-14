@@ -19,20 +19,21 @@ public class ResultsFromUsersPegs implements ResultsFromPegs {
         ArrayList<KeyPeg> keyPegs = new ArrayList<>();
 
         ArrayList<CodePeg> userCodePegsRemainingAfterBlackKeyPegsFound = new ArrayList<>();
-        ArrayList<CodePeg> ComputerCodePegsRemainingAfterBlackKeyPegsFound = new ArrayList<>();
+        ArrayList<CodePeg> computerCodePegsRemainingAfterBlackKeyPegsFound = new ArrayList<>();
 
         for (int i = 0; i < usersCodePegs.size(); i++) {
             if (usersCodePegs.get(i).getCodePegColour() == computersCodePegs.get(i).getCodePegColour()) {
                 keyPegs.add(new KeyPeg(KeyPegColour.BLACK));
             } else {
                 userCodePegsRemainingAfterBlackKeyPegsFound.add(usersCodePegs.get(i));
-                ComputerCodePegsRemainingAfterBlackKeyPegsFound.add(computersCodePegs.get(i));
+                computerCodePegsRemainingAfterBlackKeyPegsFound.add(computersCodePegs.get(i));
             }
         }
 
         for (CodePeg userCodePeg : userCodePegsRemainingAfterBlackKeyPegsFound) {
-            for (CodePeg remainingComputerCodePeg : ComputerCodePegsRemainingAfterBlackKeyPegsFound) {
+            for (CodePeg remainingComputerCodePeg : computerCodePegsRemainingAfterBlackKeyPegsFound) {
                 if (userCodePeg.getCodePegColour().equals(remainingComputerCodePeg.getCodePegColour())) {
+                    computerCodePegsRemainingAfterBlackKeyPegsFound.remove(remainingComputerCodePeg);
                     keyPegs.add(new KeyPeg(KeyPegColour.WHITE));
                     break;
                 }
