@@ -62,4 +62,22 @@ public class ResultsFromPegsTests {
         System.out.println(actual);
         Assert.assertTrue(actualResult);
     }
+    @Test
+    public void returnTrueAspepf() {
+        ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
+        userCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        userCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        userCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        userCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        ArrayList<CodePeg> computerCodePegColours = new ArrayList<>();
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        String actual = check.getAndShuffleKeyPegsUsingCodePegs(userCodePegColours, computerCodePegColours).toString();
+        boolean actualResult = false;
+        if(!actual.contains("keyPegColour=WHITE") && !actual.contains("keyPegColour=BLACK")) { actualResult = true; }
+        System.out.println(actual);
+        Assert.assertTrue(actualResult);
+    }
 }
