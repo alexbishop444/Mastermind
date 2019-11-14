@@ -2,7 +2,7 @@ import Models.*;
 
 import java.util.ArrayList;
 
-public interface KeyPegsService {
+public interface KeyPegsGeneration {
     ArrayList<KeyPeg> getAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePeg, ArrayList<CodePeg> computersCodePegColours);
 }
 

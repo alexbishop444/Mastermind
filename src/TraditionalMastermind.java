@@ -8,12 +8,12 @@ import java.util.ArrayList;
 public class TraditionalMastermind implements Mastermind {
 
     int amountOfTurns;
-    KeyPegsService keyPegsService;
+    KeyPegsGeneration keyPegsGenerator;
     UserInput userInput;
 
-    public TraditionalMastermind(int amountOfTurns, KeyPegsService keyPegsService, UserInput userInput) {
+    public TraditionalMastermind(int amountOfTurns, KeyPegsGeneration keyPegsGenerator, UserInput userInput) {
         this.amountOfTurns = amountOfTurns;
-        this.keyPegsService = keyPegsService;
+        this.keyPegsGenerator = keyPegsGenerator;
         this.userInput = userInput;
     }
 
@@ -34,7 +34,7 @@ public class TraditionalMastermind implements Mastermind {
                 gameResult = Result.WIN;
             }
 
-            ArrayList<KeyPeg> values = keyPegsService.getAndShuffleKeyPegs(userPegs,computerPegs);
+            ArrayList<KeyPeg> values = keyPegsGenerator.getAndShuffleKeyPegs(userPegs,computerPegs);
             System.out.println(values);
             System.out.println(computerPegs);
             amountOfTurns -= 1;

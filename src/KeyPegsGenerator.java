@@ -3,7 +3,7 @@ import Models.*;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class KeyUsersPegsService implements KeyPegsService {
+public class KeyPegsGenerator implements KeyPegsGeneration {
 
     private ArrayList<KeyPeg> keyPegs = new ArrayList<>();
     private ArrayList<CodePeg> userCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();

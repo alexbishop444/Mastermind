@@ -4,9 +4,9 @@ import org.junit.Test;
 
 import java.util.ArrayList;
 
-public class KeyPegsServiceTests {
+public class KeyPegsGeneratorTests {
 
-    private KeyUsersPegsService check = new KeyUsersPegsService();
+    private KeyPegsGenerator check = new KeyPegsGenerator();
 
     @Test
     public void returnTrueAsKeyPegsContainBlackAndWhite() {
