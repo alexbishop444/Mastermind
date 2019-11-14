@@ -7,7 +7,7 @@ import java.util.Arrays;
 import java.util.Collections;
 
 public class ResultsFromUsersPegs implements ResultsFromPegs {
-    public Result getGameResult(ArrayList<CodePegColour> codePegColours, ArrayList<CodePegColour> computersCodePegColours) {
+    public Result getGameResult(ArrayList<CodePeg> codePegColours, ArrayList<CodePeg> computersCodePegColours) {
         if(codePegColours.equals(computersCodePegColours)) {
             return Result.WIN;
         }

@@ -3,7 +3,7 @@ import Models.*;
 import java.util.ArrayList;
 
 public interface ResultsFromPegs {
-    Result getGameResult(ArrayList<CodePegColour> codePegColours, ArrayList<CodePegColour> computersCodePegColours);
+    Result getGameResult(ArrayList<CodePeg> codePegColours, ArrayList<CodePeg> computersCodePegColours);
     ArrayList<KeyPeg> getAndShuffleKeyPegsUsingCodePegs(ArrayList<CodePeg> usersCodePeg, ArrayList<CodePeg> computersCodePegColours);
 }
 
