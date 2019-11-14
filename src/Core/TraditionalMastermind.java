@@ -1,7 +1,8 @@
-import Models.CodePeg;
-import Models.CodePegColour;
-import Models.KeyPeg;
-import Models.Result;
+package Core;
+
+import IO.*;
+import Models.*;
+
 
 import java.util.ArrayList;
 
@@ -34,12 +35,16 @@ public class TraditionalMastermind implements Mastermind {
                 gameResult = Result.WIN;
             }
 
-            ArrayList<KeyPeg> values = keyPegsGenerator.getAndShuffleKeyPegs(userPegs,computerPegs);
+            ArrayList<KeyPeg> values = keyPegsGenerator.generateAndShuffleKeyPegs(userPegs,computerPegs);
             System.out.println(values);
             System.out.println(computerPegs);
             amountOfTurns -= 1;
 
         } while (amountOfTurns > 0);
+
+        if(amountOfTurns == 0) {
+            gameResult = Result.LOSS;
+        }
 
         return gameResult;
     }
@@ -58,7 +63,7 @@ public class TraditionalMastermind implements Mastermind {
 
     }
 
-    public Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    private Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
         if(userCodePegs.toString().equals(computersCodePegs.toString())) {
             return Result.WIN;
         }

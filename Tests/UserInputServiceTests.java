@@ -1,3 +1,4 @@
+import IO.UserInputService;
 import Models.CodePeg;
 import Models.CodePegColour;
 import org.junit.Assert;
