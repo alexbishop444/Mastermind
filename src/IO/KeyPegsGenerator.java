@@ -1,3 +1,5 @@
+package IO;
+
 import Models.*;
 
 import java.util.ArrayList;
@@ -9,17 +11,18 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
     private ArrayList<CodePeg> userCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
     private ArrayList<CodePeg> computerCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
 
-    public ArrayList<KeyPeg> getAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    public ArrayList<KeyPeg> generateAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
 
-        addBlackKeyPegs(usersCodePegs, computersCodePegs);
-        addWhiteKeyPegs();
+        generateBlackKeyPegs(usersCodePegs, computersCodePegs);
+        generateWhiteKeyPegs();
 
         Collections.shuffle(keyPegs);
+
         return keyPegs;
     }
 
 
-    private void addBlackKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    private void generateBlackKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
         for (int i = 0; i < usersCodePegs.size(); i++) {
             if (usersCodePegs.get(i).getCodePegColour() == computersCodePegs.get(i).getCodePegColour()) {
                 keyPegs.add(new KeyPeg(KeyPegColour.BLACK));
@@ -30,7 +33,7 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
         }
     }
 
-    private void addWhiteKeyPegs() {
+    private void generateWhiteKeyPegs() {
         for (CodePeg userCodePeg : userCodePegsLeftAfterBlackPegsAdded) {
             for (CodePeg remainingComputerCodePeg : computerCodePegsLeftAfterBlackPegsAdded) {
                 if (userCodePeg.getCodePegColour().equals(remainingComputerCodePeg.getCodePegColour())) {

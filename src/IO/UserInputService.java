@@ -1,3 +1,5 @@
+package IO;
+
 import Models.CodePeg;
 import Models.CodePegColour;
 
@@ -9,7 +11,7 @@ import java.util.Scanner;
 
 public class UserInputService implements UserInput {
     private Scanner scanner = new Scanner(System.in);
-    Map codePegMap = new HashMap<String,Integer>();
+    private Map codePegMap = new HashMap<String,Integer>();
 
     public String takeInput() {
         ArrayList<String> pegs = new ArrayList<>();
