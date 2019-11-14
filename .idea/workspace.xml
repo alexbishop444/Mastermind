@@ -2,9 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultsFromPegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsFromPegs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/KeyPegsServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/UserInputServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/UserInputServiceTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MasterMind/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/ResultsFromPegs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/ResultsFromUsersPegs.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/TraditionalMastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MasterMind/TraditionalMastermind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/test/MasterMind/ResultsFromPegsTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyPegsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyPegsGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/KeyUsersPegsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/KeyUsersPegsGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TraditionalMastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TraditionalMastermind.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -31,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/TraditionalMastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="828">
-              <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
+            <state relative-caret-position="513">
+              <caret line="35" selection-start-line="35" selection-end-line="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,7 +49,7 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ResultsFromPegs.java">
+        <entry file="file://$PROJECT_DIR$/src/KeyPegsGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
@@ -53,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/UserInputService.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="333">
-              <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+              <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -62,10 +70,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
+        <entry file="file://$PROJECT_DIR$/src/KeyUsersPegsGenerator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            <state relative-caret-position="435">
+              <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -74,16 +82,16 @@
         <entry file="file://$PROJECT_DIR$/src/Mastermind.java">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
+              <caret column="21" selection-start-column="21" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
+        <entry file="file://$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="753">
-              <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
+            <state relative-caret-position="488">
+              <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -130,15 +138,18 @@
         <option value="$PROJECT_DIR$/src/TraditionalInputValidation.java" />
         <option value="$PROJECT_DIR$/src/ConsoleUserInput.java" />
         <option value="$PROJECT_DIR$/src/Models/CodePeg.java" />
-        <option value="$PROJECT_DIR$/Tests/UserInputServiceTests.java" />
         <option value="$PROJECT_DIR$/src/Models/KeyPeg.java" />
         <option value="$PROJECT_DIR$/src/UserInput.java" />
         <option value="$PROJECT_DIR$/src/UserInputService.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
         <option value="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" />
-        <option value="$PROJECT_DIR$/src/TraditionalMastermind.java" />
         <option value="$PROJECT_DIR$/src/ResultsFromPegs.java" />
         <option value="$PROJECT_DIR$/src/ResultsFromUsersPegs.java" />
+        <option value="$PROJECT_DIR$/src/KeyUsersPegsService.java" />
+        <option value="$PROJECT_DIR$/src/TraditionalMastermind.java" />
+        <option value="$PROJECT_DIR$/Tests/KeyPegsServiceTests.java" />
+        <option value="$PROJECT_DIR$/Tests/UserInputServiceTests.java" />
+        <option value="$PROJECT_DIR$/src/KeyUsersPegsGenerator.java" />
       </list>
     </option>
   </component>
@@ -173,11 +184,6 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="Models" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MasterMind" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MasterMind" type="462c0819:PsiDirectoryNode" />
-              <item name="Tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -209,7 +215,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResultsFromPegsTests">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MasterMind" />
@@ -217,39 +223,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsFromPegsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="All in MasterMind" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeyPegsGeneratorTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MasterMind" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsFromPegsTests.returnOneWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KeyPegsGeneratorTests.returnTwoWhites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
-      <option name="METHOD_NAME" value="returnOneWhite" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultsFromPegsTests.returnTwoWhites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterMind" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
       <option name="METHOD_NAME" value="returnTwoWhites" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsFromPegsTests.winResultReturnedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="KeyPegsGeneratorTests.winResultReturnedTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
       <option name="METHOD_NAME" value="winResultReturnedTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -257,19 +261,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.ResultsFromPegsTests" />
-      <item itemvalue="JUnit.ResultsFromPegsTests.returnOneWhite" />
-      <item itemvalue="JUnit.ResultsFromPegsTests.returnTwoWhites" />
+      <item itemvalue="JUnit.KeyPegsGeneratorTests" />
+      <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTwoWhites" />
       <item itemvalue="Application.Main" />
-      <item itemvalue="JUnit.ResultsFromPegsTests.winResultReturnedTest" />
+      <item itemvalue="JUnit.KeyPegsGeneratorTests.winResultReturnedTest" />
+      <item itemvalue="JUnit.All in MasterMind" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ResultsFromPegsTests" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.ResultsFromPegsTests.winResultReturnedTest" />
-        <item itemvalue="JUnit.ResultsFromPegsTests.returnTwoWhites" />
-        <item itemvalue="JUnit.ResultsFromPegsTests.returnOneWhite" />
+        <item itemvalue="JUnit.All in MasterMind" />
+        <item itemvalue="JUnit.KeyPegsGeneratorTests" />
+        <item itemvalue="JUnit.KeyPegsGeneratorTests.winResultReturnedTest" />
+        <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTwoWhites" />
       </list>
     </recent_temporary>
   </component>
@@ -284,17 +288,11 @@
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
       <workItem from="1572994731712" duration="46184000" />
-      <workItem from="1573601149757" duration="13494000" />
+      <workItem from="1573601149757" duration="14438000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 13h 28m 15s.xml">
-      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_winResultReturnedTest - 2019.11.14 at 13h 29m 31s.xml">
-      <configuration name="ResultsFromPegsTests.winResultReturnedTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ResultsFromPegsTests_winResultReturnedTest - 2019.11.14 at 13h 29m 58s.xml">
       <configuration name="ResultsFromPegsTests.winResultReturnedTest" configurationId="JUnit" />
     </history-entry>
@@ -319,13 +317,18 @@
     <history-entry file="ResultsFromPegsTests - 2019.11.14 at 13h 49m 15s.xml">
       <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_MasterMind - 2019.11.14 at 14h 06m 16s.xml">
+      <configuration name="All in MasterMind" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MasterMind - 2019.11.14 at 14h 07m 13s.xml">
+      <configuration name="All in MasterMind" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59678000" />
+    <option name="totallyTimeSpent" value="60622000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -336,7 +339,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.35204083" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.35204083" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -344,7 +347,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.17040816" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.5744898" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -427,13 +430,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/UserInputServiceTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="60" column="34" lean-forward="true" selection-start-line="60" selection-start-column="34" selection-end-line="60" selection-end-column="68" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/KeyPeg.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -487,14 +483,7 @@
     <entry file="file://$PROJECT_DIR$/src/Mastermind.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
         </state>
       </provider>
     </entry>
@@ -515,44 +504,58 @@
     <entry file="file://$PROJECT_DIR$/src/UserInputService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="333">
-          <caret line="58" column="9" lean-forward="true" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
+          <caret line="58" column="9" selection-start-line="58" selection-start-column="9" selection-end-line="58" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/TraditionalMastermind.java">
+    <entry file="file://$PROJECT_DIR$/Tests/UserInputServiceTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="828">
-          <caret line="65" column="5" selection-start-line="65" selection-start-column="5" selection-end-line="65" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="310">
+          <caret line="55" column="36" selection-start-line="55" selection-start-column="36" selection-end-line="55" selection-end-column="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="753">
-          <caret line="109" column="65" selection-start-line="109" selection-start-column="65" selection-end-line="109" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResultsFromPegs.java">
+    <entry file="file://$PROJECT_DIR$/src/KeyPegsGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="5" selection-start-line="5" selection-end-line="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        <state relative-caret-position="75">
+          <caret line="5" column="71" selection-start-line="5" selection-start-column="71" selection-end-line="5" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/TraditionalMastermind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="488">
+          <caret line="91" column="61" selection-start-line="91" selection-start-column="61" selection-end-line="91" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/KeyUsersPegsGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="32" column="28" selection-start-line="32" selection-start-column="28" selection-end-line="32" selection-end-column="28" />
         </state>
       </provider>
     </entry>

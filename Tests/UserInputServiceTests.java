@@ -46,13 +46,14 @@ public class UserInputServiceTests {
 
     @Test
     public void convertInputTest() {
-        ArrayList<CodePeg> actualCodePegColours = userInputService.convertInput("Blue,Red,Green,Blue");
+        String actualCodePegColours = userInputService.convertInput("Blue,Red,Green,Blue").toString();
         ArrayList<CodePeg> expectedCodePegColours = new ArrayList<>();
         expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
         expectedCodePegColours.add(new CodePeg(CodePegColour.RED));
         expectedCodePegColours.add(new CodePeg(CodePegColour.GREEN));
         expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
-        Assert.assertEquals(expectedCodePegColours, actualCodePegColours);
+        String expected = expectedCodePegColours.toString();
+        Assert.assertEquals(expected, actualCodePegColours);
     }
     @Test
     public void convertInputWithSpacesTest() {
