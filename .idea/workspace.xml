@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ResultsFromPegsTests.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -52,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="435">
-              <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+            <state relative-caret-position="225">
+              <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -61,8 +62,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+            <state relative-caret-position="1485">
+              <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -181,7 +182,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ResultsFromPegsTests.returnTrueAspepf">
+  <component name="RunManager" selected="JUnit.ResultsFromPegsTests">
     <configuration name="ResultsFromPegsTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
@@ -191,21 +192,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsFromPegsTests.returnOneWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
-      <option name="METHOD_NAME" value="returnResultOfOneBlackAndTwoWhite" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MasterMind" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
-      <option name="METHOD_NAME" value="returnTrueAsKeyPegsContainBlackAndWhite" />
+      <option name="METHOD_NAME" value="returnOneWhite" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -221,11 +212,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UserInputServiceTests.convertInputWithSpacesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsFromPegsTests.returnTtreeWhites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="UserInputServiceTests" />
-      <option name="METHOD_NAME" value="convertInputWithSpacesTest" />
+      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="METHOD_NAME" value="returnTtreeWhites" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ResultsFromPegsTests.returnTwoWhites" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MasterMind" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ResultsFromPegsTests" />
+      <option name="METHOD_NAME" value="returnTwoWhites" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -233,18 +234,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.ResultsFromPegsTests" />
-      <item itemvalue="JUnit.UserInputServiceTests.convertInputWithSpacesTest" />
-      <item itemvalue="JUnit.ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" />
-      <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" />
       <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAspepf" />
+      <item itemvalue="JUnit.ResultsFromPegsTests.returnTtreeWhites" />
+      <item itemvalue="JUnit.ResultsFromPegsTests.returnOneWhite" />
+      <item itemvalue="JUnit.ResultsFromPegsTests.returnTwoWhites" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAspepf" />
         <item itemvalue="JUnit.ResultsFromPegsTests" />
-        <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" />
-        <item itemvalue="JUnit.ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" />
-        <item itemvalue="JUnit.UserInputServiceTests.convertInputWithSpacesTest" />
+        <item itemvalue="JUnit.ResultsFromPegsTests.returnTwoWhites" />
+        <item itemvalue="JUnit.ResultsFromPegsTests.returnOneWhite" />
+        <item itemvalue="JUnit.ResultsFromPegsTests.returnTtreeWhites" />
+        <item itemvalue="JUnit.ResultsFromPegsTests.returnTrueAspepf" />
       </list>
     </recent_temporary>
   </component>
@@ -259,44 +260,44 @@
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
       <workItem from="1572994731712" duration="46184000" />
-      <workItem from="1573601149757" duration="9236000" />
+      <workItem from="1573601149757" duration="10028000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ResultsFromPegsTests_returnResultOfOneBlackAndTwoWhite - 2019.11.14 at 10h 53m 25s.xml">
-      <configuration name="ResultsFromPegsTests.returnResultOfOneBlackAndTwoWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnTrueAsKeyPegsContainBlackAndWhite - 2019.11.14 at 10h 56m 07s.xml">
-      <configuration name="ResultsFromPegsTests.returnTrueAsKeyPegsContainBlackAndWhite" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 10h 56m 09s.xml">
-      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 02m 15s.xml">
-      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 07m 25s.xml">
-      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests - 2019.11.14 at 11h 11m 02s.xml">
-      <configuration name="ResultsFromPegsTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 13m 08s.xml">
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 19m 41s.xml">
       <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 13m 58s.xml">
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 20m 24s.xml">
       <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 14m 16s.xml">
+    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 20m 34s.xml">
       <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ResultsFromPegsTests_returnTrueAspepf - 2019.11.14 at 11h 15m 13s.xml">
-      <configuration name="ResultsFromPegsTests.returnTrueAspepf" configurationId="JUnit" />
+    <history-entry file="ResultsFromPegsTests_returnTtreeWhites - 2019.11.14 at 11h 41m 23s.xml">
+      <configuration name="ResultsFromPegsTests.returnTtreeWhites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTtreeWhites - 2019.11.14 at 11h 41m 28s.xml">
+      <configuration name="ResultsFromPegsTests.returnTtreeWhites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnOneWhite - 2019.11.14 at 11h 44m 27s.xml">
+      <configuration name="ResultsFromPegsTests.returnOneWhite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnOneWhite - 2019.11.14 at 11h 44m 35s.xml">
+      <configuration name="ResultsFromPegsTests.returnOneWhite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnOneWhite - 2019.11.14 at 11h 44m 42s.xml">
+      <configuration name="ResultsFromPegsTests.returnOneWhite" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTwoWhites - 2019.11.14 at 11h 45m 03s.xml">
+      <configuration name="ResultsFromPegsTests.returnTwoWhites" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsFromPegsTests_returnTwoWhites - 2019.11.14 at 11h 45m 21s.xml">
+      <configuration name="ResultsFromPegsTests.returnTwoWhites" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="55420000" />
+    <option name="totallyTimeSpent" value="56212000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
@@ -506,15 +507,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ResultsFromUsersPegs.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="35" column="60" selection-start-line="35" selection-start-column="60" selection-end-line="35" selection-end-column="60" />
+        <state relative-caret-position="225">
+          <caret line="21" column="28" selection-start-line="21" selection-start-column="28" selection-end-line="21" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Tests/ResultsFromPegsTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="67" column="58" lean-forward="true" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+        <state relative-caret-position="1485">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
