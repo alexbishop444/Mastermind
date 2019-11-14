@@ -39,7 +39,7 @@
 //                System.out.println("WINNER");
 //            }
 //
-////            ArrayList<KeyPegColour> values = resultsFromPegs.getKeyPegs();
+////            ArrayList<KeyPegColour> values = resultsFromPegs.getAndShuffleKeyPegsUsingCodePegs();
 ////            System.out.println(values);
 //            amountOfTurns -= 1;
 //

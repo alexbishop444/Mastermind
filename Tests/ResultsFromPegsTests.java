@@ -9,7 +9,7 @@ public class ResultsFromPegsTests {
     private ResultsFromUsersPegs check = new ResultsFromUsersPegs();
 
     @Test
-    public void returnResultOfOneBlackAndTwoWhite() {
+    public void returnTrueAsKeyPegsContainBlackAndWhite() {
         ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
         userCodePegColours.add(new CodePeg(CodePegColour.BLUE));
         userCodePegColours.add(new CodePeg(CodePegColour.ORANGE));
@@ -20,60 +20,46 @@ public class ResultsFromPegsTests {
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
-        String actual = check.getKeyPegs(userCodePegColours, computerCodePegColours).toString();
-        ArrayList<KeyPeg> expected = new ArrayList<>();
-        expected.add(new KeyPeg(KeyPegColour.WHITE));
-        expected.add(new KeyPeg(KeyPegColour.BLACK));
-        expected.add(new KeyPeg(KeyPegColour.BLACK));
-        String expectedString = expected.toString();
-        check.shuffleResult(expected);
-        Assert.assertEquals(expectedString,actual);
+        String actual = check.getAndShuffleKeyPegsUsingCodePegs(userCodePegColours, computerCodePegColours).toString();
+        boolean actualResult = false;
+        if(actual.contains("keyPegColour=WHITE") && actual.contains("keyPegColour=BLACK")) { actualResult = true; }
+        System.out.println(actual);
+        Assert.assertTrue(actualResult);
     }
-//
-//    @Test
-//    public void returnWin() {
-//        ArrayList<CodePegColour> userCodePegColours = new ArrayList<>();
-//        userCodePegColours.add(CodePegColour.BLUE);
-//        userCodePegColours.add(CodePegColour.ORANGE);
-//        userCodePegColours.add(CodePegColour.YELLOW);
-//        userCodePegColours.add(CodePegColour.RED);
-//        userCodePegColours.add(CodePegColour.BLUE);
-//        ArrayList<CodePegColour> computerCodePegColours = new ArrayList<>();
-//        computerCodePegColours.add(CodePegColour.BLUE);
-//        computerCodePegColours.add(CodePegColour.ORANGE);
-//        computerCodePegColours.add(CodePegColour.YELLOW);
-//        computerCodePegColours.add(CodePegColour.RED);
-//        computerCodePegColours.add(CodePegColour.BLUE);
-//        Result actual = check.getGameResult(userCodePegColours, computerCodePegColours);
-//        Assert.assertEquals(Result.WIN,actual);
-//    }
-//
-//    @Test
-//    public void TETSTSTSTTST() {
-//        ArrayList<CodePegColour> userCodePegColours = new ArrayList<>();
-//        userCodePegColours.add(CodePegColour.RED);
-//        userCodePegColours.add(CodePegColour.ORANGE);
-//        userCodePegColours.add(CodePegColour.BLUE);
-//        userCodePegColours.add(CodePegColour.RED);
-//        ArrayList<CodePegColour> computerCodePegColours = new ArrayList<>();
-//        computerCodePegColours.add(CodePegColour.BLUE);
-//        computerCodePegColours.add(CodePegColour.ORANGE);
-//        computerCodePegColours.add(CodePegColour.YELLOW);
-//        computerCodePegColours.add(CodePegColour.RED);
-//        ArrayList actual = check.getKeyPegs(userCodePegColours, computerCodePegColours);
-//    }
-//    @Test
-//    public void TETSTSTSTTSrf() {
-//        ArrayList<CodePegColour> userCodePegColours = new ArrayList<>();
-//        userCodePegColours.add(CodePegColour.RED);
-//        userCodePegColours.add(CodePegColour.RED);
-//        userCodePegColours.add(CodePegColour.GREEN);
-//        userCodePegColours.add(CodePegColour.RED);
-//        ArrayList<CodePegColour> computerCodePegColours = new ArrayList<>();
-//        computerCodePegColours.add(CodePegColour.GREEN);
-//        computerCodePegColours.add(CodePegColour.RED);
-//        computerCodePegColours.add(CodePegColour.RED);
-//        computerCodePegColours.add(CodePegColour.RED);
-//        ArrayList actual = check.getKeyPegs(userCodePegColours, computerCodePegColours);
-//    }
+    @Test
+    public void returnTrueAsKeyPegsDontContainWhite() {
+        ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.BLUE));
+        ArrayList<CodePeg> computerCodePegColours = new ArrayList<>();
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        computerCodePegColours.add(new CodePeg(CodePegColour.RED));
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        String actual = check.getAndShuffleKeyPegsUsingCodePegs(userCodePegColours, computerCodePegColours).toString();
+        boolean actualResult = false;
+        if(!actual.contains("keyPegColour=WHITE") && actual.contains("keyPegColour=BLACK")) { actualResult = true; }
+        System.out.println(actual);
+        Assert.assertTrue(actualResult);
+    }
+    @Test
+    public void returnTrueAsKeyPegsAreEmpty() {
+        ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        userCodePegColours.add(new CodePeg(CodePegColour.RED));
+        ArrayList<CodePeg> computerCodePegColours = new ArrayList<>();
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
+        String actual = check.getAndShuffleKeyPegsUsingCodePegs(userCodePegColours, computerCodePegColours).toString();
+        boolean actualResult = false;
+        if(!actual.contains("keyPegColour=WHITE") && !actual.contains("keyPegColour=BLACK")) { actualResult = true; }
+        System.out.println(actual);
+        Assert.assertTrue(actualResult);
+    }
 }
