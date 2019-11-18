@@ -13,8 +13,4 @@ public class KeyPeg {
     public KeyPeg(KeyPegColour keyPegColour) {
         this.keyPegColour = keyPegColour;
     }
-
-    public KeyPegColour getKeyPegColour() {
-        return keyPegColour;
-    }
 }

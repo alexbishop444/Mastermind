@@ -11,11 +11,8 @@ import java.util.Scanner;
 public class UserInputService implements UserInput {
     private Scanner scanner = new Scanner(System.in);
     private Map codePegColourMap = new HashMap<String,Integer>();
-    private ArrayList<String> codePegColours = new ArrayList<>();
-
 
     public String takeInput() {
-
         updateCodePegColoursMap();
 
         System.out.println("Choose four pegs from " + codePegColourMap.keySet());
@@ -30,7 +27,7 @@ public class UserInputService implements UserInput {
         for (String userChosenPeg:userPegs) {
 //            System.out.println("CodePegColour: " + userChosenPeg + " | codePegColourMap: " + codePegColourMap.toString());  //FOR DEBUGGING
             if (!codePegColourMap.containsKey(userChosenPeg)) {
-                System.out.println("Error: you have given an invalid colour!");
+                System.out.println("Error: You have given an invalid colour!");
                 return false;
             }
         }
@@ -42,7 +39,7 @@ public class UserInputService implements UserInput {
     public Boolean isValidLength(String userInput) {
         String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
         if (userPegs.length != 4) {
-            System.out.println("Error: you must pass Four colours!");
+            System.out.println("Error: You must pass four colours!");
             return false;
         }
         return true;
