@@ -24,32 +24,36 @@ public class TraditionalMastermind implements Mastermind {
     public Result start() {
         randomizeComputersPegs();
         Result gameResult = Result.PLAYING;
-//        System.out.println(computerPegs.toString());
+        System.out.println(computerPegs.toString());
         do {
-            String consoleInput = userInput.takeInput();
-            if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
-                userPegs = userInput.convertInput(consoleInput);
+            takeInput();
+            gameResult = getGameResult(userPegs,computerPegs);
+            if(gameResult != Result.WIN) {
+                getKeyPegs();
             }
-
-            if (getGameResult(userPegs, computerPegs) == Result.WIN) {
-                System.out.println("WINNER");
-                amountOfTurns = 0;
-                gameResult = Result.WIN;
-            }
-
-            ArrayList<KeyPeg> values = keyPegsGenerator.generateAndShuffleKeyPegs(userPegs,computerPegs);
-            System.out.println(values);
-            System.out.println(computerPegs);
             amountOfTurns -= 1;
-
         } while (amountOfTurns > 0);
 
-        if(amountOfTurns == 0) {
-            System.out.println("You have ran out of turns! The correct combination is " + computerPegs.toString());
-            gameResult = Result.LOSS;
-        }
-
+        gameResult = getGameResult(userPegs,computerPegs);
         return gameResult;
+    }
+
+
+    private void getKeyPegs() {
+        ArrayList<KeyPeg> values = keyPegsGenerator.generateAndShuffleKeyPegs(userPegs,computerPegs);
+        if(values.size() == 0) {
+            System.out.println("You have no Key Pegs!");
+        } else {
+            System.out.println(values);
+            System.out.println(computerPegs);
+        }
+    }
+
+    private void takeInput() {
+        String consoleInput = userInput.takeInput();
+        if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
+            userPegs = userInput.convertInput(consoleInput);
+        }
     }
 
     private void randomizeComputersPegs() {
@@ -64,9 +68,14 @@ public class TraditionalMastermind implements Mastermind {
 
     }
 
-    private Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    public Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
         if(userCodePegs.toString().equals(computersCodePegs.toString())) {
+            System.out.println("WINNER");
+            amountOfTurns = 0;
             return Result.WIN;
+        } else if(!userCodePegs.toString().equals(computersCodePegs.toString()) && amountOfTurns == 0) {
+            System.out.println("You have ran out of turns! The correct combination is " + computerPegs.toString());
+            return Result.LOSS;
         }
         return Result.PLAYING;
     }
