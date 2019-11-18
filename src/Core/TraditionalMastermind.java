@@ -31,10 +31,10 @@ public class TraditionalMastermind implements Mastermind {
             if(gameResult != Result.WIN) {
                 getKeyPegs();
             }
-            amountOfTurns -= 1;
         } while (amountOfTurns > 0);
-
-        gameResult = getGameResult(userPegs,computerPegs);
+        if(gameResult != Result.WIN) {
+            gameResult = getGameResult(userPegs, computerPegs);
+        }
         return gameResult;
     }
 
@@ -53,6 +53,7 @@ public class TraditionalMastermind implements Mastermind {
         String consoleInput = userInput.takeInput();
         if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
             userPegs = userInput.convertInput(consoleInput);
+            amountOfTurns -= 1;
         }
     }
 
@@ -73,7 +74,7 @@ public class TraditionalMastermind implements Mastermind {
             System.out.println("WINNER");
             amountOfTurns = 0;
             return Result.WIN;
-        } else if(!userCodePegs.toString().equals(computersCodePegs.toString()) && amountOfTurns == 0) {
+        } else if(amountOfTurns == 0) {
             System.out.println("You have ran out of turns! The correct combination is " + computerPegs.toString());
             return Result.LOSS;
         }
