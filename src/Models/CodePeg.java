@@ -1,7 +1,7 @@
 package Models;
 
 public class CodePeg {
-    public CodePegColour codePegColour;
+    private CodePegColour codePegColour;
 
     public CodePeg(CodePegColour codePegColour) {
         this.codePegColour = codePegColour;

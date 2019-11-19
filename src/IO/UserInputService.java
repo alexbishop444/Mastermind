@@ -48,7 +48,6 @@ public class UserInputService implements UserInput {
     public ArrayList<CodePeg> convertInput(String userInput) {
         ArrayList<CodePeg> convertedInputToCodePegs = new ArrayList<>();
         String[] userPegsInput = userInput.replace(" ","").split(",");
-//        System.out.println(userPegsInput);
         updateCodePegColoursMap();
         for (String peg:userPegsInput) {
             if (!codePegColourMap.containsKey(peg)) {

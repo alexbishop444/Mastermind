@@ -1,7 +1,7 @@
 package Models;
 
 public class KeyPeg {
-    public KeyPegColour keyPegColour;
+    private KeyPegColour keyPegColour;
 
     @Override
     public String toString() {
