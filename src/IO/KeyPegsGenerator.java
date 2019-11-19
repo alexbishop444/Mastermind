@@ -12,7 +12,7 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
     private ArrayList<CodePeg> computerCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
 
     public ArrayList<KeyPeg> generateAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
-
+        keyPegs.clear();
         generateBlackKeyPegs(usersCodePegs, computersCodePegs);
         generateWhiteKeyPegs();
 

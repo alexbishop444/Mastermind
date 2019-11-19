@@ -26,6 +26,7 @@ public class TraditionalMastermind implements Mastermind {
         Result gameResult = Result.PLAYING;
 //        System.out.println(computerPegs.toString());
         do {
+            System.out.println(computerPegs);
             inputService();
             gameResult = getGameResult(userPegs,computerPegs);
             if(gameResult == Result.PLAYING) {
