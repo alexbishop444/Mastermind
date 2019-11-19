@@ -21,8 +21,8 @@ public class UserInputService implements UserInput {
     }
 
     public Boolean isValidColour(String userInput) {
-        String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
         updateCodePegColoursMap();
+        String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
 
         for (String userChosenPeg:userPegs) {
 //            System.out.println("CodePegColour: " + userChosenPeg + " | codePegColourMap: " + codePegColourMap.toString());  //FOR DEBUGGING
@@ -46,14 +46,16 @@ public class UserInputService implements UserInput {
     }
 
     public ArrayList<CodePeg> convertInput(String userInput) {
+        updateCodePegColoursMap();
         ArrayList<CodePeg> convertedInputToCodePegs = new ArrayList<>();
         String[] userPegsInput = userInput.replace(" ","").split(",");
-        updateCodePegColoursMap();
+
         for (String peg:userPegsInput) {
             if (!codePegColourMap.containsKey(peg)) {
                 convertedInputToCodePegs.add(new CodePeg(CodePegColour.valueOf(peg.toUpperCase())));
             }
         }
+
         return convertedInputToCodePegs;
     }
 

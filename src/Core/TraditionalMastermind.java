@@ -21,21 +21,17 @@ public class TraditionalMastermind implements Mastermind {
         this.userInput = userInput;
     }
 
-    public Result start() {
+    public void start() {
         randomizeComputersPegs();
         Result gameResult = Result.PLAYING;
-        System.out.println(computerPegs.toString());
+//        System.out.println(computerPegs.toString());
         do {
-            takeInput();
+            inputService();
             gameResult = getGameResult(userPegs,computerPegs);
-            if(gameResult != Result.WIN) {
+            if(gameResult == Result.PLAYING) {
                 getKeyPegs();
             }
-        } while (amountOfTurns > 0);
-        if(gameResult != Result.WIN) {
-            gameResult = getGameResult(userPegs, computerPegs);
-        }
-        return gameResult;
+        } while (gameResult == Result.PLAYING);
     }
 
     public Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
@@ -50,21 +46,20 @@ public class TraditionalMastermind implements Mastermind {
         return Result.PLAYING;
     }
 
+    private void inputService() {
+        String consoleInput = userInput.takeInput();
+        if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
+            userPegs = userInput.convertInput(consoleInput);
+            amountOfTurns -= 1;
+        }
+    }
+
     private void getKeyPegs() {
         ArrayList<KeyPeg> keyPegs = keyPegsGenerator.generateAndShuffleKeyPegs(userPegs,computerPegs);
         if(keyPegs.size() == 0) {
             System.out.println("You have no Key Pegs!");
         } else {
             System.out.println(keyPegs);
-            System.out.println(computerPegs);
-        }
-    }
-
-    private void takeInput() {
-        String consoleInput = userInput.takeInput();
-        if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
-            userPegs = userInput.convertInput(consoleInput);
-            amountOfTurns -= 1;
         }
     }
 

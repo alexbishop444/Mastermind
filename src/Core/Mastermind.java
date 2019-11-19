@@ -6,6 +6,6 @@ import Models.Result;
 import java.util.ArrayList;
 
 public interface Mastermind {
-    Result start();
+    void start();
     Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs);
 }
