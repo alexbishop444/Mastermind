@@ -17,6 +17,8 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
         generateWhiteKeyPegs();
 
         Collections.shuffle(keyPegs);
+        userCodePegsLeftAfterBlackPegsAdded.clear();
+        computerCodePegsLeftAfterBlackPegsAdded.clear();
 
         return keyPegs;
     }
