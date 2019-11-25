@@ -8,7 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class UserInputService implements UserInput {
+public class ConsoleInputService implements UserInput {
     private Scanner scanner = new Scanner(System.in);
     private Map codePegColourMap = new HashMap<String,Integer>();
 
@@ -22,7 +22,7 @@ public class UserInputService implements UserInput {
 
     public Boolean isValidColour(String userInput) {
         updateCodePegColoursMap();
-        String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
+        String[] userPegs = userInputStringToStringArray(userInput);
 
         for (String userChosenPeg:userPegs) {
 //            System.out.println("CodePegColour: " + userChosenPeg + " | codePegColourMap: " + codePegColourMap.toString());  //FOR DEBUGGING
@@ -37,7 +37,7 @@ public class UserInputService implements UserInput {
 
 
     public Boolean isValidLength(String userInput) {
-        String[] userPegs = userInput.toUpperCase().replace(" ","").split(",");
+        String[] userPegs = userInputStringToStringArray(userInput);
         if (userPegs.length != 4) {
             System.out.println("Error: You must pass four colours!");
             return false;
@@ -45,18 +45,22 @@ public class UserInputService implements UserInput {
         return true;
     }
 
+    private String[] userInputStringToStringArray(String userInput) {
+        return userInput.toUpperCase().replace(" ","").split(",");
+    }
+
     public ArrayList<CodePeg> convertInput(String userInput) {
         updateCodePegColoursMap();
-        ArrayList<CodePeg> convertedInputToCodePegs = new ArrayList<>();
+        ArrayList<CodePeg> inputConvertedToCodePegs = new ArrayList<>();
         String[] userPegsInput = userInput.replace(" ","").split(",");
 
         for (String peg:userPegsInput) {
             if (!codePegColourMap.containsKey(peg)) {
-                convertedInputToCodePegs.add(new CodePeg(CodePegColour.valueOf(peg.toUpperCase())));
+                inputConvertedToCodePegs.add(new CodePeg(CodePegColour.valueOf(peg.toUpperCase())));
             }
         }
 
-        return convertedInputToCodePegs;
+        return inputConvertedToCodePegs;
     }
 
     private void updateCodePegColoursMap() {

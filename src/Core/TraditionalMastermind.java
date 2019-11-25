@@ -10,15 +10,15 @@ public class TraditionalMastermind implements Mastermind {
 
     private int amountOfTurns;
     private KeyPegsGeneration keyPegsGenerator;
-    private UserInput userInput;
+    private UserInput consoleInputService;
     private ArrayList<CodePeg> computerPegs = new ArrayList<>();
     private ArrayList<CodePeg> userPegs = new ArrayList<>();
 
 
-    public TraditionalMastermind(int amountOfTurns, KeyPegsGeneration keyPegsGenerator, UserInput userInput) {
+    public TraditionalMastermind(int amountOfTurns, KeyPegsGeneration keyPegsGenerator, UserInput consoleInputService) {
         this.amountOfTurns = amountOfTurns;
         this.keyPegsGenerator = keyPegsGenerator;
-        this.userInput = userInput;
+        this.consoleInputService = consoleInputService;
     }
 
     public void start() {
@@ -26,14 +26,32 @@ public class TraditionalMastermind implements Mastermind {
         Result gameResult = Result.PLAYING;
 //        System.out.println(computerPegs.toString());
         do {
-            System.out.println(computerPegs);
-            inputService();
-            gameResult = getGameResult(userPegs,computerPegs);
-            if(gameResult == Result.PLAYING) {
-                getKeyPegs();
-            }
+            String consoleInput = consoleInputService.takeInput();
+            gameResult = turn(consoleInput);
         } while (gameResult == Result.PLAYING);
     }
+
+    public Result turn(String userInput) {
+        Result gameResult = Result.PLAYING;
+
+        if (consoleInputService.isValidColour(userInput) && consoleInputService.isValidLength(userInput)) {
+            userPegs = consoleInputService.convertInput(userInput);
+            amountOfTurns -= 1;
+        }
+
+        gameResult = getGameResult(userPegs,computerPegs);
+
+        if(gameResult == Result.PLAYING) {
+            getKeyPegs();
+        }
+
+        return gameResult;
+    }
+
+    //Function that does thing
+    //Loop does that function till amount of turns runs out.
+
+
 
     public Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
         if(userCodePegs.toString().equals(computersCodePegs.toString())) {
@@ -45,14 +63,6 @@ public class TraditionalMastermind implements Mastermind {
             return Result.LOSS;
         }
         return Result.PLAYING;
-    }
-
-    private void inputService() {
-        String consoleInput = userInput.takeInput();
-        if (userInput.isValidColour(consoleInput) && userInput.isValidLength(consoleInput)) {
-            userPegs = userInput.convertInput(consoleInput);
-            amountOfTurns -= 1;
-        }
     }
 
     private void getKeyPegs() {

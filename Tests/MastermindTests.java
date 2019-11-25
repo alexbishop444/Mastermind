@@ -3,7 +3,7 @@ import Core.TraditionalMastermind;
 import IO.KeyPegsGeneration;
 import IO.KeyPegsGenerator;
 import IO.UserInput;
-import IO.UserInputService;
+import IO.ConsoleInputService;
 import Models.CodePeg;
 import Models.CodePegColour;
 import Models.Result;
@@ -13,10 +13,11 @@ import org.junit.Test;
 import java.util.ArrayList;
 
 public class MastermindTests {
-    private UserInput userInputService = new UserInputService();
+    private UserInput userInputService = new ConsoleInputService();
     private KeyPegsGeneration keyPegsGenerator = new KeyPegsGenerator();
     private Mastermind traditionalMastermind = new TraditionalMastermind(80,keyPegsGenerator,userInputService);
     @Test
+    //rename tests so the condition is made clear
     public void winResultReturnedTest() {
         ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
         userCodePegColours.add(new CodePeg(CodePegColour.BLUE));
