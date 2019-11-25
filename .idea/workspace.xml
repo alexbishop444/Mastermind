@@ -4,16 +4,8 @@
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Tests/MastermindTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/MastermindTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Tests/UserInputServiceTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/ConsoleInputServiceTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/Core/TraditionalMastermind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MasterMind/Core/TraditionalMastermind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/IO/KeyPegsGenerator.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MasterMind/IO/KeyPegsGenerator.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/IO/UserInputService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MasterMind/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MasterMind/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/MasterMind/MastermindTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/MasterMind/MastermindTests.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/MasterMind/UserInputServiceTests.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Core/Mastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/Mastermind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/KeyPegsGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/KeyPegsGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/IO/UserInputService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/IO/ConsoleInputService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -24,7 +16,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="154" />
+    <option name="myElementSize" value="168" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
@@ -32,10 +24,34 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Core/TraditionalMastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="347">
-              <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+            <state relative-caret-position="840">
+              <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Tests/MastermindTests.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="596">
+              <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -106,15 +122,15 @@
         <option value="$PROJECT_DIR$/src/IO/KeyPegsGeneration.java" />
         <option value="$PROJECT_DIR$/src/Models/KeyPeg.java" />
         <option value="$PROJECT_DIR$/src/Models/CodePeg.java" />
-        <option value="$PROJECT_DIR$/src/Main.java" />
-        <option value="$PROJECT_DIR$/src/Core/Mastermind.java" />
         <option value="$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java" />
         <option value="$PROJECT_DIR$/src/IO/UserInputService.java" />
-        <option value="$PROJECT_DIR$/Tests/MastermindTests.java" />
         <option value="$PROJECT_DIR$/src/IO/KeyPegsGenerator.java" />
         <option value="$PROJECT_DIR$/Tests/UserInputServiceTests.java" />
         <option value="$PROJECT_DIR$/src/IO/ConsoleInputService.java" />
+        <option value="$PROJECT_DIR$/src/Core/Mastermind.java" />
+        <option value="$PROJECT_DIR$/Tests/MastermindTests.java" />
         <option value="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
       </list>
     </option>
   </component>
@@ -197,7 +213,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.KeyPegsGeneratorTests.returnTrueAsKeyPegsContainBlackAndWhite">
+  <component name="RunManager" selected="JUnit.MastermindTests.AmountOfTurnsIsZero">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MasterMind" />
@@ -213,50 +229,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPegsGeneratorTests.returnTrueAsKeyPegsContainBlackAndWhite" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MastermindTests.AmountOfTurnsIsZero" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
-      <option name="METHOD_NAME" value="returnTrueAsKeyPegsContainBlackAndWhite" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTests" />
+      <option name="METHOD_NAME" value="AmountOfTurnsIsZero" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPegsGeneratorTests.returnTwoWhitePegs" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MastermindTests.usersInputCorrectComboToWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
-      <option name="METHOD_NAME" value="returnTwoWhitePegs" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTests" />
+      <option name="METHOD_NAME" value="usersInputCorrectComboToWin" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyPegsGeneratorTests.testy444" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MasterMind" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="KeyPegsGeneratorTests" />
-      <option name="METHOD_NAME" value="testy444" />
+      <option name="MAIN_CLASS_NAME" value="MastermindTests" />
+      <option name="METHOD_NAME" value="usersInputNotCorrectComboToWinWithTurnsRemaining" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
+      <item itemvalue="JUnit.MastermindTests.usersInputCorrectComboToWin" />
+      <item itemvalue="JUnit.MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" />
+      <item itemvalue="JUnit.MastermindTests.AmountOfTurnsIsZero" />
       <item itemvalue="Application.Main" />
       <item itemvalue="JUnit.All in MasterMind" />
-      <item itemvalue="JUnit.KeyPegsGeneratorTests.testy444" />
-      <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTwoWhitePegs" />
-      <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTrueAsKeyPegsContainBlackAndWhite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTrueAsKeyPegsContainBlackAndWhite" />
-        <item itemvalue="JUnit.All in MasterMind" />
+        <item itemvalue="JUnit.MastermindTests.AmountOfTurnsIsZero" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="JUnit.KeyPegsGeneratorTests.returnTwoWhitePegs" />
-        <item itemvalue="JUnit.KeyPegsGeneratorTests.testy444" />
+        <item itemvalue="JUnit.All in MasterMind" />
+        <item itemvalue="JUnit.MastermindTests.usersInputCorrectComboToWin" />
+        <item itemvalue="JUnit.MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" />
       </list>
     </recent_temporary>
   </component>
@@ -271,44 +287,44 @@
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
       <workItem from="1572994731712" duration="46184000" />
-      <workItem from="1573601149757" duration="40502000" />
+      <workItem from="1573601149757" duration="42819000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 13h 35m 50s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_usersInputNotCorrectComboToWinWithTurnsRemaining - 2019.11.25 at 14h 36m 31s.xml">
+      <configuration name="MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 13h 39m 00s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_usersInputNotCorrectComboToWinWithTurnsRemaining - 2019.11.25 at 14h 37m 20s.xml">
+      <configuration name="MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 13h 39m 15s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_usersInputNotCorrectComboToWinWithTurnsRemaining - 2019.11.25 at 14h 37m 24s.xml">
+      <configuration name="MastermindTests.usersInputNotCorrectComboToWinWithTurnsRemaining" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 13h 39m 24s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_usersInputCorrectComboToWin - 2019.11.25 at 14h 37m 52s.xml">
+      <configuration name="MastermindTests.usersInputCorrectComboToWin" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 14h 37m 30s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_AmountOfTurnsIsZero - 2019.11.25 at 14h 39m 24s.xml">
+      <configuration name="MastermindTests.AmountOfTurnsIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.21 at 14h 37m 43s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_AmountOfTurnsIsZero - 2019.11.25 at 14h 39m 33s.xml">
+      <configuration name="MastermindTests.AmountOfTurnsIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.25 at 11h 45m 01s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_AmountOfTurnsIsZero - 2019.11.25 at 14h 40m 10s.xml">
+      <configuration name="MastermindTests.AmountOfTurnsIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.25 at 11h 45m 30s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_AmountOfTurnsIsZero - 2019.11.25 at 14h 40m 25s.xml">
+      <configuration name="MastermindTests.AmountOfTurnsIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="All_in_MasterMind - 2019.11.25 at 11h 45m 43s.xml">
-      <configuration name="All in MasterMind" configurationId="JUnit" />
+    <history-entry file="MastermindTests_AmountOfTurnsIsZero - 2019.11.25 at 14h 40m 31s.xml">
+      <configuration name="MastermindTests.AmountOfTurnsIsZero" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="KeyPegsGeneratorTests_returnTrueAsKeyPegsContainBlackAndWhite - 2019.11.25 at 11h 46m 57s.xml">
-      <configuration name="KeyPegsGeneratorTests.returnTrueAsKeyPegsContainBlackAndWhite" configurationId="JUnit" />
+    <history-entry file="All_in_MasterMind - 2019.11.25 at 14h 42m 33s.xml">
+      <configuration name="All in MasterMind" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="86686000" />
+    <option name="totallyTimeSpent" value="89003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -332,7 +348,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.39081633" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39081633" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -354,6 +370,38 @@
       <window_info anchor="right" id="Capture Analysis" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25213677" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.39081633" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32959184" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.422449" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32959184" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.5007874" side_tool="true" weight="0.2857143" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" sideWeight="0.4992126" weight="0.24969475" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Theme Preview" order="6" />
+      <window_info anchor="right" id="Maven" order="7" />
+      <window_info anchor="right" id="Capture Analysis" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -363,7 +411,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/MasterMind$All_in_MasterMind.ic" NAME="All in MasterMind Coverage Results" MODIFIED="1574307461922" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/MasterMind$All_in_MasterMind.ic" NAME="All in MasterMind Coverage Results" MODIFIED="1574653351416" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Tests/UserInputTests.java" />
@@ -396,16 +444,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Models/CodePegColour.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="405">
@@ -414,16 +452,6 @@
             <element signature="imports" expanded="true" />
             <element signature="e#540#541#0" expanded="true" />
             <element signature="e#574#575#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/MastermindTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="19" column="49" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -476,16 +504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Core/Mastermind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/IO/UserInput.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -526,10 +544,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/Core/Mastermind.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/MastermindTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="596">
+          <caret line="52" column="14" selection-start-line="52" selection-start-column="14" selection-end-line="52" selection-end-column="14" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/TraditionalMastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="347">
-          <caret line="44" column="9" lean-forward="true" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        <state relative-caret-position="840">
+          <caret line="56" column="31" lean-forward="true" selection-start-line="56" selection-start-column="31" selection-end-line="56" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
