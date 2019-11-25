@@ -6,15 +6,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class KeyPegsGenerator implements KeyPegsGeneration {
-
+    //pull out what i can here
     private ArrayList<KeyPeg> keyPegs = new ArrayList<>();
     private ArrayList<CodePeg> userCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
     private ArrayList<CodePeg> computerCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
 
     public ArrayList<KeyPeg> generateAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
+        //take in computerpegs in constructor
         keyPegs.clear();
         generateBlackKeyPegs(usersCodePegs, computersCodePegs);
         generateWhiteKeyPegs();
+        //seperate out for tests
 
         Collections.shuffle(keyPegs);
         userCodePegsLeftAfterBlackPegsAdded.clear();
@@ -23,7 +25,7 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
         return keyPegs;
     }
 
-
+   //put arrays in method
     private void generateBlackKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
         for (int i = 0; i < usersCodePegs.size(); i++) {
             if (usersCodePegs.get(i).getCodePegColour() == computersCodePegs.get(i).getCodePegColour()) {
