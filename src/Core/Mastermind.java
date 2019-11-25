@@ -8,4 +8,5 @@ import java.util.ArrayList;
 public interface Mastermind {
     void start();
     Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs);
+    Result playerTurn(String userInput, ArrayList<CodePeg> computerPegs);
 }
