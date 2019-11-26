@@ -11,18 +11,19 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
     private ArrayList<CodePeg> userCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
     private ArrayList<CodePeg> computerCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
 
-    public ArrayList<KeyPeg> generateAndShuffleKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
-        //take in computerpegs in constructor
+    public ArrayList<KeyPeg> generateKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
         keyPegs.clear();
         generateBlackKeyPegs(usersCodePegs, computersCodePegs);
         generateWhiteKeyPegs();
-        //seperate out for tests
 
-        Collections.shuffle(keyPegs);
         userCodePegsLeftAfterBlackPegsAdded.clear();
         computerCodePegsLeftAfterBlackPegsAdded.clear();
 
         return keyPegs;
+    }
+
+    public void shuffleKeyPegs(ArrayList<KeyPeg> keyPegs) {
+        Collections.shuffle(keyPegs);
     }
 
    //put arrays in method
