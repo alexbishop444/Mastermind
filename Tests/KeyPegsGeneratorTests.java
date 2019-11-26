@@ -8,7 +8,7 @@ import java.util.ArrayList;
 
 public class KeyPegsGeneratorTests {
 
-    private KeyPegsGenerator check = new KeyPegsGenerator();
+    private KeyPegsGenerator keyPegsGenerator = new KeyPegsGenerator();
 
     @Test
     public void whiteAndBlackKeyPegsReturnedAsRightColourSelectionAndPlacement() {
@@ -22,11 +22,13 @@ public class KeyPegsGeneratorTests {
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
-        String actual = check.generateAndShuffleKeyPegs(userCodePegColours, computerCodePegColours).toString();
-        boolean actualResult = false;
-        if(actual.contains("keyPegColour=WHITE") && actual.contains("keyPegColour=BLACK")) { actualResult = true; }
-        System.out.println(actual);
-        Assert.assertTrue(actualResult);
+        String actual = keyPegsGenerator.generateKeyPegs(userCodePegColours, computerCodePegColours).toString();
+        ArrayList<KeyPeg> expectedPegs = new ArrayList<>();
+        expectedPegs.add(new KeyPeg(KeyPegColour.BLACK));
+        expectedPegs.add(new KeyPeg(KeyPegColour.BLACK));
+        expectedPegs.add(new KeyPeg(KeyPegColour.WHITE));
+        String expected = expectedPegs.toString();
+        Assert.assertEquals(expected,actual);
     }
     @Test
     public void correctColourPlacementOnlyBlackKeyPegs() {
@@ -40,11 +42,13 @@ public class KeyPegsGeneratorTests {
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
         computerCodePegColours.add(new CodePeg(CodePegColour.RED));
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
-        String actual = check.generateAndShuffleKeyPegs(userCodePegColours, computerCodePegColours).toString();
-        boolean actualResult = false;
-        if(!actual.contains("keyPegColour=WHITE") && actual.contains("keyPegColour=BLACK")) { actualResult = true; }
-        System.out.println(actual);
-        Assert.assertTrue(actualResult);
+        String actual = keyPegsGenerator.generateKeyPegs(userCodePegColours, computerCodePegColours).toString();
+        ArrayList<KeyPeg> expectedPegs = new ArrayList<>();
+        expectedPegs.add(new KeyPeg(KeyPegColour.BLACK));
+        expectedPegs.add(new KeyPeg(KeyPegColour.BLACK));
+        expectedPegs.add(new KeyPeg(KeyPegColour.BLACK));
+        String expected = expectedPegs.toString();
+        Assert.assertEquals(expected,actual);
     }
     @Test
     public void noKeyPegs() {
@@ -58,10 +62,8 @@ public class KeyPegsGeneratorTests {
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
         computerCodePegColours.add(new CodePeg(CodePegColour.YELLOW));
-        String actual = check.generateAndShuffleKeyPegs(userCodePegColours, computerCodePegColours).toString();
-        boolean actualResult = false;
-        if(!actual.contains("keyPegColour=WHITE") && !actual.contains("keyPegColour=BLACK")) { actualResult = true; }
-        System.out.println(actual);
-        Assert.assertTrue(actualResult);
+        ArrayList<KeyPeg> actual = keyPegsGenerator.generateKeyPegs(userCodePegColours, computerCodePegColours);
+        ArrayList<KeyPeg> expected = new ArrayList<>();
+        Assert.assertEquals(expected,actual);
     }
 }

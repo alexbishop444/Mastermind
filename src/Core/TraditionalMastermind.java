@@ -22,7 +22,7 @@ public class TraditionalMastermind implements Mastermind {
     public void start() {
         ArrayList<CodePeg> computerPegs = randomizeComputersPegs();
         Result gameResult = Result.PLAYING;
-//        System.out.println(computerPegs.toString());
+        System.out.println(computerPegs.toString());
         do {
             String consoleInput = consoleInputService.takeInput();
             gameResult = playerTurn(consoleInput,computerPegs);
@@ -60,7 +60,8 @@ public class TraditionalMastermind implements Mastermind {
     }
 
     private void getKeyPegs(ArrayList<CodePeg> userPegs, ArrayList<CodePeg> computerPegs) {
-        ArrayList<KeyPeg> keyPegs = keyPegsGenerator.generateAndShuffleKeyPegs(userPegs,computerPegs);
+        ArrayList<KeyPeg> keyPegs = keyPegsGenerator.generateKeyPegs(userPegs,computerPegs);
+        keyPegsGenerator.shuffleKeyPegs(keyPegs);
         if(keyPegs.size() == 0) {
             System.out.println("You have no Key Pegs!");
         } else {
