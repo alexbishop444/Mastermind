@@ -40,23 +40,30 @@ public class TraditionalMastermind implements Mastermind {
 
         gameResult = getGameResult(userPegs,computerPegs);
 
-        if(gameResult == Result.PLAYING) {
-            getKeyPegs(userPegs, computerPegs);
-        }
+        output(gameResult,computerPegs,userPegs);
 
         return gameResult;
     }
 
     public Result getGameResult(ArrayList<CodePeg> userCodePegs, ArrayList<CodePeg> computersCodePegs) {
         if(userCodePegs.toString().equals(computersCodePegs.toString())) {
-            System.out.println("WINNER");
             amountOfTurns = 0;
             return Result.WIN;
         } else if(amountOfTurns == 0) {
-            System.out.println("You have ran out of turns! The correct combination is " + computersCodePegs.toString());
             return Result.LOSS;
         }
         return Result.PLAYING;
+    }
+
+    private void output(Result result, ArrayList<CodePeg> computersCodePegs, ArrayList<CodePeg> userPegs) {
+        switch (result) {
+            case WIN:
+                System.out.println("WINNER");
+            case LOSS:
+                System.out.println("You have ran out of turns! The correct combination is " + computersCodePegs.toString());
+            case PLAYING:
+                getKeyPegs(userPegs, computersCodePegs);
+        }
     }
 
     private void getKeyPegs(ArrayList<CodePeg> userPegs, ArrayList<CodePeg> computerPegs) {
