@@ -40,7 +40,7 @@ public class MastermindTests {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public void amountOfTurnsIsZero() {
+    public void amountOfTurnsIsZeroSoGameIsOver() {
         UserInput userInputService = new ConsoleInputService();
         KeyPegsGeneration keyPegsGenerator = new KeyPegsGenerator();
         TraditionalMastermind traditionalMastermind = new TraditionalMastermind(1,keyPegsGenerator,userInputService);
