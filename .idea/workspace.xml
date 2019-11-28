@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="96b2f1a7-5e70-454f-bba2-c46a46a5aee7" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -13,18 +12,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageViewManager">
-    <option name="myElementSize" value="187" />
+    <option name="myElementSize" value="193" />
   </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+              <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -35,7 +34,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-531">
+            <state relative-caret-position="-403">
               <caret line="5" selection-start-line="5" selection-end-line="5" />
             </state>
           </provider>
@@ -55,11 +54,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Core/TraditionalMastermind.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
+            <state relative-caret-position="462">
+              <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,8 +124,8 @@
         <option value="$PROJECT_DIR$/src/IO/KeyPegsGenerator.java" />
         <option value="$PROJECT_DIR$/src/IO/KeyPegsGeneration.java" />
         <option value="$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java" />
-        <option value="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/Core/TraditionalMastermind.java" />
       </list>
     </option>
   </component>
@@ -209,7 +208,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.All in MasterMind">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="MasterMind" />
@@ -263,8 +262,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.All in MasterMind" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.All in MasterMind" />
         <item itemvalue="JUnit.KeyPegsGeneratorTests" />
         <item itemvalue="JUnit.KeyPegsGeneratorTests.noKeyPegs" />
         <item itemvalue="JUnit.KeyPegsGeneratorTests.correctColourPlacementOnlyBlackKeyPegs" />
@@ -282,17 +281,11 @@
       <option name="presentableId" value="Default" />
       <updated>1572994727994</updated>
       <workItem from="1572994731712" duration="46184000" />
-      <workItem from="1573601149757" duration="47638000" />
+      <workItem from="1573601149757" duration="48124000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="KeyPegsGeneratorTests_whiteAndBlackKeyPegsReturnedAsRightColourSelectionAndPlacement - 2019.11.26 at 13h 34m 01s.xml">
-      <configuration name="KeyPegsGeneratorTests.whiteAndBlackKeyPegsReturnedAsRightColourSelectionAndPlacement" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="KeyPegsGeneratorTests_whiteAndBlackKeyPegsReturnedAsRightColourSelectionAndPlacement - 2019.11.26 at 13h 34m 48s.xml">
-      <configuration name="KeyPegsGeneratorTests.whiteAndBlackKeyPegsReturnedAsRightColourSelectionAndPlacement" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="KeyPegsGeneratorTests_correctColourPlacementOnlyBlackKeyPegs - 2019.11.26 at 13h 35m 34s.xml">
       <configuration name="KeyPegsGeneratorTests.correctColourPlacementOnlyBlackKeyPegs" configurationId="JUnit" />
     </history-entry>
@@ -317,9 +310,15 @@
     <history-entry file="All_in_MasterMind - 2019.11.26 at 14h 24m 55s.xml">
       <configuration name="All in MasterMind" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="All_in_MasterMind - 2019.11.28 at 09h 58m 38s.xml">
+      <configuration name="All in MasterMind" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="All_in_MasterMind - 2019.11.28 at 09h 58m 58s.xml">
+      <configuration name="All in MasterMind" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93822000" />
+    <option name="totallyTimeSpent" value="94308000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -343,7 +342,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32959184" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.29183674" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.29183674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,7 +350,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.32959184" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.422449" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.422449" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Messages" order="12" weight="0.32959184" />
       <window_info anchor="right" id="Coverage" sideWeight="0.5007874" side_tool="true" weight="0.2857143" />
@@ -546,6 +545,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-403">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="71" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="71" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/IO/KeyPegsGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -558,27 +574,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Tests/KeyPegsGeneratorTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-531">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Core/TraditionalMastermind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="41" column="8" lean-forward="true" selection-start-line="41" selection-start-column="8" selection-end-line="41" selection-end-column="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="70" selection-start-line="8" selection-start-column="70" selection-end-line="8" selection-end-column="70" />
+        <state relative-caret-position="462">
+          <caret line="57" column="30" selection-start-line="57" selection-start-column="30" selection-end-line="57" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
