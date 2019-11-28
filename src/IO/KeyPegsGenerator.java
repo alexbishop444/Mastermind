@@ -6,15 +6,13 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class KeyPegsGenerator implements KeyPegsGeneration {
-    //pull out what i can here
-    private ArrayList<KeyPeg> keyPegs = new ArrayList<>();
     private ArrayList<CodePeg> userCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
     private ArrayList<CodePeg> computerCodePegsLeftAfterBlackPegsAdded = new ArrayList<>();
 
     public ArrayList<KeyPeg> generateKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
-        keyPegs.clear();
-        generateBlackKeyPegs(usersCodePegs, computersCodePegs);
-        generateWhiteKeyPegs();
+        ArrayList<KeyPeg> keyPegs = new ArrayList<>();
+        generateBlackKeyPegs(usersCodePegs, computersCodePegs, keyPegs);
+        generateWhiteKeyPegs(keyPegs);
 
         userCodePegsLeftAfterBlackPegsAdded.clear();
         computerCodePegsLeftAfterBlackPegsAdded.clear();
@@ -27,7 +25,7 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
     }
 
    //put arrays in method
-    private void generateBlackKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs) {
+    private void generateBlackKeyPegs(ArrayList<CodePeg> usersCodePegs, ArrayList<CodePeg> computersCodePegs, ArrayList<KeyPeg> keyPegs) {
         for (int i = 0; i < usersCodePegs.size(); i++) {
             if (usersCodePegs.get(i).getCodePegColour() == computersCodePegs.get(i).getCodePegColour()) {
                 keyPegs.add(new KeyPeg(KeyPegColour.BLACK));
@@ -38,7 +36,7 @@ public class KeyPegsGenerator implements KeyPegsGeneration {
         }
     }
 
-    private void generateWhiteKeyPegs() {
+    private void generateWhiteKeyPegs(ArrayList<KeyPeg> keyPegs) {
         for (CodePeg userCodePeg : userCodePegsLeftAfterBlackPegsAdded) {
             for (CodePeg remainingComputerCodePeg : computerCodePegsLeftAfterBlackPegsAdded) {
                 if (userCodePeg.getCodePegColour().equals(remainingComputerCodePeg.getCodePegColour())) {

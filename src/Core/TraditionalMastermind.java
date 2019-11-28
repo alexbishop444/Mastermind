@@ -40,7 +40,7 @@ public class TraditionalMastermind implements Mastermind {
 
         gameResult = getGameResult(userPegs,computerPegs);
 
-        output(gameResult,computerPegs,userPegs);
+        outputService(gameResult,computerPegs,userPegs);
 
         return gameResult;
     }
@@ -55,7 +55,7 @@ public class TraditionalMastermind implements Mastermind {
         return Result.PLAYING;
     }
 
-    private void output(Result result, ArrayList<CodePeg> computersCodePegs, ArrayList<CodePeg> userPegs) {
+    private void outputService(Result result, ArrayList<CodePeg> computersCodePegs, ArrayList<CodePeg> userPegs) {
         switch (result) {
             case WIN:
                 System.out.println("WINNER");

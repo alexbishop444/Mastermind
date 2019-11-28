@@ -16,7 +16,7 @@ public class ConsoleInputServiceTests {
         Assert.assertTrue(actual);
     }
     @Test
-    public void validateCorrectLength() {
+    public void validateCorrectLengthOfFour() {
         Boolean actual = consoleInputService.isValidLength("Blue, Red, Green, Blue");
         Assert.assertTrue(actual);
     }
@@ -45,7 +45,7 @@ public class ConsoleInputServiceTests {
     }
 
     @Test
-    public void convertInput() {
+    public void convertInputFromStringToPegsArray() {
         String actualCodePegColours = consoleInputService.convertInput("Blue,Red,Green,Blue").toString();
         ArrayList<CodePeg> expectedCodePegColours = new ArrayList<>();
         expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));
@@ -56,7 +56,7 @@ public class ConsoleInputServiceTests {
         Assert.assertEquals(expected, actualCodePegColours);
     }
     @Test
-    public void convertInputWithSpaces() {
+    public void convertInputWithSpacesFromStringToPegsArray() {
         String actualCodePegColours = consoleInputService.convertInput("Blue,     Red,Green,     Blue").toString();
         ArrayList<CodePeg> expectedCodePegColours = new ArrayList<>();
         expectedCodePegColours.add(new CodePeg(CodePegColour.BLUE));

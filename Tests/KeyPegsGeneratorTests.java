@@ -31,7 +31,7 @@ public class KeyPegsGeneratorTests {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public void correctColourPlacementOnlyBlackKeyPegs() {
+    public void correctColourPlacementReturnsThreeBlackKeyPegs() {
         ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
         userCodePegColours.add(new CodePeg(CodePegColour.RED));
         userCodePegColours.add(new CodePeg(CodePegColour.RED));
@@ -51,7 +51,7 @@ public class KeyPegsGeneratorTests {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public void noKeyPegs() {
+    public void noKeyPegsReturnedAsColoursChosenAreAllIncorrect() {
         ArrayList<CodePeg> userCodePegColours = new ArrayList<>();
         userCodePegColours.add(new CodePeg(CodePegColour.RED));
         userCodePegColours.add(new CodePeg(CodePegColour.RED));
